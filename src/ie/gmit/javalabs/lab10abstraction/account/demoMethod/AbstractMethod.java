@@ -1,4 +1,4 @@
-package ie.gmit.javalabs.lab10abstraction.demoMethod;
+package ie.gmit.javalabs.lab10abstraction.account.demoMethod;
 
 public abstract class AbstractMethod {
 	

@@ -1,4 +1,4 @@
-package ie.gmit.javalabs.lab10abstraction.demoClass;
+package ie.gmit.javalabs.lab10abstraction.account.demoClass;
 
 public class AbstractSubClass extends AbstractClass {
 	

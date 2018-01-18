@@ -1,4 +1,4 @@
-package ie.gmit.javalabs.lab10abstraction.shoppingTrolley;
+package ie.gmit.javalabs.lab10abstraction.account.shoppingTrolley;
 
 public class LineItemDriver {
 

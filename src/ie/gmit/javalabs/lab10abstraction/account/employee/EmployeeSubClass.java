@@ -1,4 +1,4 @@
-package ie.gmit.javalabs.lab10abstraction.employee;
+package ie.gmit.javalabs.lab10abstraction.account.employee;
 
 public class EmployeeSubClass extends Employee {
 
