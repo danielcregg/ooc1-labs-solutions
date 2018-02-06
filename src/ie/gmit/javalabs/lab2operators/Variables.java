@@ -4,13 +4,13 @@ public class Variables {
 
 	public static void main(String[] args) {
 		// Declare and initialize eight primitive values
-		boolean booleanValue = true;
+		boolean booleanValue = false;
 		byte byteValue = 1;
 		short shortValue = 3;
 		int intValue = 1;
-		long longValue = 10;
-		float floatValue = (float) 1.11;
-		double doubleValue = 2.1212;
+		long longValue = 10l;
+		float floatValue = 1.11f;
+		double doubleValue = 2.1212d;
 		char charValue = 'A';
 		
 		// Display the eight variables (Not Constants)
@@ -23,7 +23,7 @@ public class Variables {
 		System.out.println("Double Value: "+doubleValue);
 		System.out.println("Char Value: "+charValue);
 		
-		// Declare and initialize seven primitive constant values
+		// Declare and initialize eight primitive constant values
 		final boolean constantBooleanValue=true;
 		final byte constantByteValue=1;
 		final short constantShortValue=3;

@@ -19,5 +19,10 @@ public class Casting {
 		b = (byte) i;
 		c = (char) b;
 		System.out.println("Result: " + c);
+		
+		float danFloat = 3.14f;
+		int danInt = (int) danFloat;
+		System.out.println(danInt);
+		
 	}
 }
