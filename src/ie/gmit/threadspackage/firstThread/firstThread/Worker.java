@@ -1,4 +1,4 @@
-package ie.gmit.threadspackage.Eamon.firstThread;
+package ie.gmit.threadspackage.firstThread.firstThread;
 
 class Worker extends Thread {
 	 

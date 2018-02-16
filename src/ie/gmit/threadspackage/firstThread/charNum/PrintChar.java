@@ -1,4 +1,4 @@
-package ie.gmit.threadspackage.Eamon.charNum;
+package ie.gmit.threadspackage.firstThread.charNum;
 
 public class PrintChar extends Thread {
 	
