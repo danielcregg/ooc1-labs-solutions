@@ -11,6 +11,8 @@ public class ForEachLoop {
 			System.out.print(",");
 		}
 
+		//System.out.print(numericals[0]);
+		
 		System.out.println(); // adding space
 
 		for (int u : numericals) {
@@ -18,6 +20,8 @@ public class ForEachLoop {
 			System.out.print(",");
 		}
 
+		System.out.print(numericals[0]);
+		
 		System.out.println(); // adding space
 
 		String[] titles = { "William", "Beatrice", "Lucy", "Sam" };

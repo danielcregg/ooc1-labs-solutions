@@ -15,6 +15,12 @@ public class DogDriver {
 
 		// Use the getter methods in combination with System.out.println() again to print the Dog’s new weight.
 		System.out.println(dog1.getName() + " " + dog1.getWeight() + " " + dog1.breed);
-	}
-
-}
+		
+		//Create new dog Object
+		Dog dog2 = new Dog("Bingo", 10, "Pug");
+		
+		// Use the getter methods in combination with System.out.println() again to print the Dog’s new weight.
+		System.out.println(dog2.getName() + " " + dog2.getWeight() + " " + dog2.breed);
+				
+	} // end main
+} // end class
