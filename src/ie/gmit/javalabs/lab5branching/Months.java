@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Months {
 
 	public static void main(String[] args) {
-		
-		Scanner in = new Scanner(System.in);
+
+		Scanner userInput = new Scanner(System.in);
 		
 		System.out.print("Enter the number of the month you were born: ");
-		
-		//int monthNumber;
-		int monthNumber = in.nextInt();
-		//System.out.println(monthNumber);
+
+		int monthNumber = userInput.nextInt();
 		
 		System.out.print("You were born in ");
 
@@ -41,11 +39,11 @@ public class Months {
 		} else if (monthNumber == 12) {
 			System.out.println("December");
 		} else {
-			System.out.println("Invalid month.");
+			System.out.println("Invalid month number.");
 		} // Close if
 		
 		// Close Scanner object
-		in.close();
+		userInput.close();
 		
 	} // Close Main
 } // Close Class

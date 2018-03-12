@@ -5,7 +5,10 @@ public class EncapTest {
 	private String name;
 	private String idNum;
 	private int age;
-
+	
+	public EncapTest() {
+	}
+	
 	public int getAge() {
 		return age;
 	}
@@ -18,15 +21,19 @@ public class EncapTest {
 		return idNum;
 	}
 
-	public void setAge(int newAge) {
-		age = newAge;
+	public void setAge(int age) {
+		if (age < 0) {
+			System.out.println("Invalid age");
+		} else {
+			this.age = age;
+		}
 	}
 
-	public void setName(String newName) {
-		name = newName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setIdNum(String newId) {
-		idNum = newId;
+	public void setIdNum(String idNum) {
+		this.idNum = idNum;
 	}
 }
