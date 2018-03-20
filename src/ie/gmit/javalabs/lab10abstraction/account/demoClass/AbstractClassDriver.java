@@ -6,7 +6,7 @@ public class AbstractClassDriver {
 	//	AbstractClass ab1 = new AbstractClass();
 		AbstractSubClass asc1 = new AbstractSubClass(5);
 		System.out.println(asc1.getAge());
-		System.out.println(asc1.getShorty());
+		System.out.println(asc1.printPi());
 	}
 
 }

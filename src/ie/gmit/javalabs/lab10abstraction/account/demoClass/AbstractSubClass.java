@@ -7,7 +7,7 @@ public class AbstractSubClass extends AbstractClass {
 	}
 	
 	@Override
-	public double getShorty() {
-		return 0.0;
+	public double printPi() {
+		return 3.14;
 	}
 }

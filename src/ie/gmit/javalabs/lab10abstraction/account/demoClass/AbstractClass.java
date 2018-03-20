@@ -13,6 +13,6 @@ public abstract class AbstractClass {
 	}
 	
 	// Abstract Method - No Body
-	public abstract double getShorty();
+	public abstract double printPi();
 	
 }
