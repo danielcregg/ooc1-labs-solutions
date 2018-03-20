@@ -7,10 +7,11 @@ public class AnimalSoundDriver {
 		Dog dog1 = new Dog();
 		Cat cat1 = new Cat();
 		
-		animal1.sound();
-		dog1.sound();
-		cat1.sound();
-
+		animal1.speak();
+		cat1.speak();
+		dog1.speak();
+		
+		
 	}
 
 }

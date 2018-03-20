@@ -1,10 +1,8 @@
 package ie.gmit.javalabs.lab9polymorphism.overriding.animal;
 
-public class Cat extends Animal {
-	
+public class Duck extends Animal{
 	@Override
 	public void speak() {
-		System.out.println("Meow!");
+		System.out.println("Quack!");
 	}
-	
 }
