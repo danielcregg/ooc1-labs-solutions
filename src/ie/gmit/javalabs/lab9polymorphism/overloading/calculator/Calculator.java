@@ -2,15 +2,28 @@ package ie.gmit.javalabs.lab9polymorphism.overloading.calculator;
 
 public class Calculator {
 	
-	int add(int a, int b) {
+	public double add(int a, double b) {
 		return a + b;
 	}
-
-	int add(int a, int b, int c) {
+	
+	// Differs in number of parameters passed
+	public double add(int a, double b, int c) {
 		return a + b + c;
 	}
 	
-	double add(double a, double b) {
+	// Differs in the type of parameters
+	public double add(double a, double b) {
 		return a + b;
 	}
+	
+	// Differs in the sequence of parameters
+	public double add(double a, int b) {
+		return a + b;
+	}
+	
+	// Changing the return type of method does not work!
+//	public int add(int a, double b, int c) {
+//		return a + b + c;
+//	}
+	
 }
