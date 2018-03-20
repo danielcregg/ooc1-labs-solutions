@@ -1,15 +1,22 @@
 package ie.gmit.javalabs.lab8inheritance.shapes;
 
 public class TwoDShape {
+	
+	// Instance Variables
 	private double width;
 	private double height;
 
+	// Default Constructor
+	public TwoDShape() {
+	};
+	
+	// Constructor - Parameterised
 	public TwoDShape(double width, double height) {
-		super();
 		this.width = width;
 		this.height = height;
 	}
 
+	// Getters and Setters
 	public double getWidth() {
 		return width;
 	}
@@ -26,7 +33,8 @@ public class TwoDShape {
 		this.height = height;
 	}
 
+	// Print Method
 	public void print() {
-		System.out.println("Width is " + width + "and Height is " + height);
+		System.out.println("Width is " + width + " and Height is " + height);
 	}
 }

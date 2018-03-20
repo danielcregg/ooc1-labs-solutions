@@ -1,13 +1,19 @@
 package ie.gmit.javalabs.lab8inheritance.shapes;
 
 public class Triangle extends TwoDShape {
+	// Instance Variable
 	private String style;
 	
+	public Triangle() {
+	};
+	
+	// Constructor
 	public Triangle(String style, double width, double height) {
-		super(width, height);
+		super(width, height); // Call constructor of Super class
 		this.style = style;
 	}
-
+	
+	// Getters and setters
 	public String getStyle() {
 		return style;
 	}
@@ -16,17 +22,19 @@ public class Triangle extends TwoDShape {
 		this.style = style;
 	}
 	
-	public double area() {
-		return .5 * getWidth() * super.getHeight();
+	// Area Method
+	public double area(){
+		double areaOfTriangle = super.getWidth() * super.getHeight() / 2;
+		return areaOfTriangle;
 	}
 	
 	public void printStyle() {
 		System.out.println(style);
 	}
 	
-	public void print() { 
-		System.out.println("The triangle is " + style); 
-		System.out.println("Width is " + getWidth() + " and Height is " + getHeight());
-	} 
+//	public void print() { 
+//		System.out.println("The triangle is " + style); 
+//		System.out.println("Width is " + getWidth() + " and Height is " + getHeight());
+//	} 
 
 }

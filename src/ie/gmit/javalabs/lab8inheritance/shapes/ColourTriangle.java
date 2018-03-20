@@ -1,9 +1,15 @@
 package ie.gmit.javalabs.lab8inheritance.shapes;
 
 public class ColourTriangle extends Triangle {
+	// Instance Variable
 	private String colour;
-
-	public ColourTriangle(String style, double width, double height, String colour) {
+	
+	// Default Constructor
+	public ColourTriangle() {
+	}
+	
+	// Constructor
+	public ColourTriangle(String colour, String style, double width, double height) {
 		super(style, width, height);
 		this.colour = colour;
 	}
