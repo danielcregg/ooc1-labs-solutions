@@ -1,40 +1,40 @@
 package ie.gmit.javalabs.lab10abstraction.account.employee;
 
 public abstract class Employee {
-   private String name;
-   private String address;
-   private int number;
+	private String name;
+	private String address;
+	private int age;
 
-   public Employee(String name, String address, int number) {
-      System.out.println("Constructing an Employee");
-      this.name = name;
-      this.address = address;
-      this.number = number;
-   }
-   
-   public abstract double computePay();
-   
-   public void mailCheck() {
-      System.out.println("Mailing a check to " + this.name + " " + this.address);
-   }
+	public Employee(String name, String address, int number) {
+		this.name = name;
+		this.address = address;
+		this.age = number;
+	}
 
-   public String toString() {
-      return name + " " + address + " " + number;
-   }
+	public String getName() {
+		return name;
+	}
 
-   public String getName() {
-      return name;
-   }
- 
-   public String getAddress() {
-      return address;
-   }
-   
-   public void setAddress(String newAddress) {
-      address = newAddress;
-   }
- 
-   public int getNumber() {
-      return number;
-   }
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getNumber() {
+		return age;
+	}
+
+	public void setNumber(int number) {
+		this.age = number;
+	}
+
+	// Abstract Class
+	public abstract double computePay();
 }
