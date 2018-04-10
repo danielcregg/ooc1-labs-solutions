@@ -22,8 +22,13 @@ public class Calculator {
 	}
 	
 	// Changing the return type of method does not work!
-//	public int add(int a, double b, int c) {
-//		return a + b + c;
+//	public int add(int a, double b) {
+//		return a + b;
+//	}
+	
+	// Changing the access modifer of method does not work!
+//	private double add(int a, double b) {
+//		return a + b;
 //	}
 	
 }
