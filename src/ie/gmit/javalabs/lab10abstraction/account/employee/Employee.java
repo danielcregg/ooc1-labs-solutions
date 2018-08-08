@@ -1,16 +1,27 @@
 package ie.gmit.javalabs.lab10abstraction.account.employee;
 
 public abstract class Employee {
+	
 	private String name;
 	private String address;
 	private int age;
+	private double salary;
 
-	public Employee(String name, String address, int number) {
+	public Employee(String name, String address, int age, double salary) {
 		this.name = name;
 		this.address = address;
-		this.age = number;
+		this.age = age;
+		this.salary = salary;
 	}
 
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -35,6 +46,6 @@ public abstract class Employee {
 		this.age = number;
 	}
 
-	// Abstract Class
+	// Abstract Method
 	public abstract double computePay();
 }

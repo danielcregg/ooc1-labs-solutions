@@ -7,7 +7,6 @@ public class LineItemImpl implements LineItem {
 	private int	quantity;
 	private float price;
 	
-			
 	// Constructor
 	public LineItemImpl(String number, String name) {
 		this.number = number;
@@ -21,12 +20,12 @@ public class LineItemImpl implements LineItem {
 		this.price = price;
 	}
 	
-	@Override
+	//@Override
 	public void setItemNumber(String number) {
 		this.number = number;
 	}
 
-	@Override
+	//@Override
 	public String getItemNumber() {
 		return this.number;
 	}
