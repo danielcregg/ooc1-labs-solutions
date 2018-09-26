@@ -1,7 +1,6 @@
 package ie.gmit.javalabs2.collections;
 
 import java.util.ArrayList; // Use Ctrl+Shift+O to add
-import java.util.Arrays;
 import java.util.List;
 
 public class App {
