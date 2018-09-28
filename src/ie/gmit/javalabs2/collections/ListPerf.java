@@ -27,31 +27,30 @@ public class ListPerf {
 		// ArrayList add
 		startTime = System.nanoTime();
 			for (int i = 0; i < NUM_OPERATIONS; i++) {
-				arrayList.add(0, i);
+				arrayList.add(0, i); // Add to start of list
 			}
 		endTime = System.nanoTime();
 		
 		arrayListAddTime = endTime - startTime;
-		
 		System.out.println("ArrayList add:\t\t" + arrayListAddTime + "ns");
 
 		// LinkedList add
 		startTime = System.nanoTime();
-
-		for (int i = 0; i < NUM_OPERATIONS; i++) {
-			linkedList.add(0, i);
-		}
+			for (int i = 0; i < NUM_OPERATIONS; i++) {
+				linkedList.add(0, i);
+			}
 		endTime = System.nanoTime();
+		
 		linkedListAddTime = endTime - startTime;
 		System.out.println("LinkedList add:\t\t" + linkedListAddTime + "ns");
 
 		// ArrayList get
 		startTime = System.nanoTime();
-
-		for (int i = 0; i < NUM_OPERATIONS; i++) {
-			arrayList.get(i);
-		}
+			for (int i = 0; i < NUM_OPERATIONS; i++) {
+				arrayList.get(i);
+			}
 		endTime = System.nanoTime();
+		
 		arrayListGetTime = endTime - startTime;
 		System.out.println("ArrayList get:\t\t" + arrayListGetTime + "ns");
 
