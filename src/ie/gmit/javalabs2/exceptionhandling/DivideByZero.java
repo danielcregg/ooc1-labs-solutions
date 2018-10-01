@@ -1,6 +1,8 @@
 package ie.gmit.javalabs2.exceptionhandling;
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
+
 
 public class DivideByZero {
 	public static void main(String args[]) {
@@ -9,13 +11,25 @@ public class DivideByZero {
 		int denominator = 0;
 
 		// Get numerator
-		System.out.print("Please enter an integer numerator: ");
-		numerator = userInput.nextInt();
-
+		System.out.print("Please enter an integer numerator: ");     
+		try {  
+			numerator = userInput.nextInt();
+		} catch (InputMismatchException inputMismatchException) {
+			System.err.printf( "\nException: %s\n", inputMismatchException );                                    
+			System.out.println("Please enter an integer.\n");
+			System.exit(-1); // Kill program
+		}
+		
 		// Get denominator
 		System.out.print("Please enter an integer denominator: ");
-		denominator = userInput.nextInt();
-
+		try {
+			denominator = userInput.nextInt();
+		} catch (InputMismatchException inputMismatchException) {
+			System.err.printf( "\nException: %s\n", inputMismatchException );                                    
+			System.out.println("Please enter an integer.\n");
+			System.exit(-1); // Kill program
+		}
+		
 		// Print Result
 		try {
 			System.out.println("\nResult: " + numerator/denominator);
@@ -28,3 +42,4 @@ public class DivideByZero {
 		userInput.close(); // Close Scanner object
 	} // end main
 } // end class DivideByZero
+
