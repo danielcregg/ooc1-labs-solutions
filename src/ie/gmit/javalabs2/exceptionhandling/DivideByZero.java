@@ -17,8 +17,14 @@ public class DivideByZero {
 		denominator = userInput.nextInt();
 
 		// Print Result
-		System.out.println("\nResult: " + numerator/denominator);
-		
+		try {
+			System.out.println("\nResult: " + numerator/denominator);
+		} catch(ArithmeticException e) {
+			System.out.println("\nThere was an Arithmetic Error!");
+			System.out.println("Please check your input numbers!");
+			System.out.println( "Exception: " + e );
+			
+		}
 		userInput.close(); // Close Scanner object
 	} // end main
 } // end class DivideByZero
