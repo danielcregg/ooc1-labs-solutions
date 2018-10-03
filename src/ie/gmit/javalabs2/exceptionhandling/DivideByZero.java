@@ -32,7 +32,7 @@ public class DivideByZero {
 				System.out.println( "Exception: " + ae );
 			} 
 		} while (continueAsking);
-
+		
 		userInput.close(); // Close Scanner object
 	} // end main
 } // end class DivideByZero
