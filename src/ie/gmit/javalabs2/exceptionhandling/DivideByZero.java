@@ -23,13 +23,14 @@ public class DivideByZero {
 				System.out.println("\nResult: " + numerator/denominator);
 				continueAsking = false; // input successful; end looping        
 			} catch (InputMismatchException inputMisEx) {
-				System.err.printf( "\nException: %s\n", inputMisEx );                                    
-				System.out.println("You did not enter an integer.\n");
+				System.out.print("\nYou did not enter an integer: ");
+				System.out.print( "Exception: " + inputMisEx );
+				System.out.println("\nPlease try again!\n");
 				userInput.nextLine(); // discard input so user can try again    
 			} catch(ArithmeticException ae) {
-				System.out.println("\nThere was an Arithmetic Error!");
-				System.out.println("Please check your input numbers!");
-				System.out.println( "Exception: " + ae );
+				System.out.print("\nThere was an Arithmetic Error: ");
+				System.out.print( "Exception: " + ae );
+				System.out.println("\nPlease check your input numbers and try again!\n");
 			} 
 		} while (continueAsking);
 		
