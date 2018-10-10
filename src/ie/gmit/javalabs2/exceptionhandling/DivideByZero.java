@@ -20,7 +20,7 @@ public class DivideByZero {
 				System.out.print("Please enter an integer denominator: ");
 				denominator = userInput.nextInt();
 				// Print Result
-				System.out.println("\nResult: " + numerator/denominator);
+				System.out.println("\nResult: " + (float) numerator/denominator);
 				continueAsking = false; // input successful; end looping        
 			} catch (InputMismatchException inputMisEx) {
 				System.out.print("\nYou did not enter an integer: ");
