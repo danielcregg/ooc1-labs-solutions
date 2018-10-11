@@ -31,10 +31,11 @@ public class DivideByZero {
 				System.out.print("\nThere was an Arithmetic Error: ");
 				System.out.print( "Exception: " + ae );
 				System.out.println("\nPlease check your input numbers and try again!\n");
-			} 
+			} finally {
+				userInput.close(); // Close Scanner object
+			}
 		} while (continueAsking);
 		
-		userInput.close(); // Close Scanner object
 	} // end main
 } // end class DivideByZero
 
