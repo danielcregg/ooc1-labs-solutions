@@ -5,6 +5,8 @@ public class JavaExceptionExample {
 		try {
 			// code that may raise exception
 			int data = 100 / 0;
+			
+			System.out.println(data);
 		} catch (Exception exception) {
 			System.out.println(exception);
 		}
