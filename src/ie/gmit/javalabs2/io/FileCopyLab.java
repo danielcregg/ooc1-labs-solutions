@@ -5,18 +5,18 @@ import java.io.*;
 public class FileCopyLab {
 
 	public static void main(String[] args) {
-		FileInputStream inputStream = null;
-		FileOutputStream outputStream = null;
+		FileReader fileReader = null;
+		FileWriter fileWriter = null;
 		int data = 0;
 		try {
-			// Create File input Stream to get data from file.
-			inputStream = new FileInputStream("in.txt");
-			// Create File output Stream to send data to file.
-			outputStream = new FileOutputStream("out.txt");
+			// Create File reader to get data from file.
+			fileReader = new FileReader("in.txt");
+			// Create File writer to send data to file.
+			fileWriter = new FileWriter("out.txt");
 			// Read in byte from file and store it
-			while((data = inputStream.read()) != -1) {
+			while((data = fileReader.read()) != -1) {
 				// Write out byte from program and store it out.txt
-				outputStream.write(data);
+				fileWriter.write(data);
 			}
 			System.out.println("Copy Complete!");
 		} catch (FileNotFoundException fnfe) {
@@ -26,18 +26,18 @@ public class FileCopyLab {
 			System.out.println(ioe);
 			ioe.printStackTrace();
 		} finally {
-			if (inputStream != null) {
+			if (fileReader != null) {
 				try {
-					inputStream.close();
+					fileReader.close();
 				} catch (IOException ioe) {
 					System.out.println(ioe);
 					ioe.printStackTrace();
 				}
 			}
 			
-			if (outputStream != null) {
+			if (fileWriter != null) {
 				try {
-					outputStream.close();
+					fileWriter.close();
 				} catch (IOException ioe) {
 					System.out.println(ioe);
 					ioe.printStackTrace();
