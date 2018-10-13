@@ -31,6 +31,15 @@ public class FileCopyLab {
 					ioe.printStackTrace();
 				}
 			}
+			
+			if (outputStream != null) {
+				try {
+					outputStream.close();
+				} catch (IOException ioe) {
+					System.out.println(ioe);
+					ioe.printStackTrace();
+				}
+			}
 		}
 	}
 }
