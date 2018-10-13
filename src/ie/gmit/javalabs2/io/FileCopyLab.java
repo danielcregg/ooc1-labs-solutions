@@ -7,14 +7,16 @@ public class FileCopyLab {
 	public static void main(String[] args) {
 		FileReader fileReader = null;
 		FileWriter fileWriter = null;
-		int data = 0;
+		BufferedReader br = null;
+		String data = null;
 		try {
 			// Create File reader to get data from file.
 			fileReader = new FileReader("in.txt");
+			br = new BufferedReader(fileReader);
 			// Create File writer to send data to file.
 			fileWriter = new FileWriter("out.txt");
 			// Read in byte from file and store it
-			while((data = fileReader.read()) != -1) {
+			while((data = br.readLine()) != null) {
 				// Write out byte from program and store it out.txt
 				fileWriter.write(data);
 			}
