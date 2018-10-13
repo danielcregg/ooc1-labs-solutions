@@ -19,6 +19,7 @@ public class FileCopyLab {
 			while((data = br.readLine()) != null) {
 				// Write out byte from program and store it out.txt
 				fileWriter.write(data);
+				fileWriter.write("\n");
 			}
 			System.out.println("Copy Complete!");
 		} catch (FileNotFoundException fnfe) {
