@@ -1,7 +1,7 @@
 package ie.gmit.javalabs2.io;
 
 import java.io.*;
-
+ 
 public class FileCopyLab {
 
 	public static void main(String[] args) {
