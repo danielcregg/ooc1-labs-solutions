@@ -1,55 +1,65 @@
 package ie.gmit.javalabs2.serialization;
 
-import java.io.*;
+import java.io.*; // Must import java.io to implement serialization
 
 public class SerializeDemo {
 	public static void main(String[] args) {
-		Demo object = new Demo(1, "geeksforgeeks");
+		// Create Demo Object
+		Demo demoObject1 = new Demo(1, "This is a String!");
+		// Create Output file
 		String filename = "file.ser";
-
-		System.out.println("a = " + object.a);
-		System.out.println("b = " + object.b);
-		
+		// Print Object variables
+		System.out.println("a = " + demoObject1.a);
+		System.out.println("b = " + demoObject1.b);
+		// Add Space
 		System.out.println("");
-		
-		// Serialization
+
+		/*********************
+		 *   Serialization   *
+		 *********************/
 		try {
 			// Saving of object in a file
-			FileOutputStream file = new FileOutputStream(filename);
-			ObjectOutputStream out = new ObjectOutputStream(file);
+			
+			// Create file output stream
+			FileOutputStream fileOutStream = new FileOutputStream(filename);
+			// Create Object Output Stream which writes objects to an OutputStream.
+			ObjectOutputStream out = new ObjectOutputStream(fileOutStream);
 
 			// Method for serialization of object
-			out.writeObject(object);
-
+			out.writeObject(demoObject1);
+	
+			// Close write file
 			out.close();
-			file.close();
-
+			// Close outout stream
+			fileOutStream.close();
+			
 			System.out.println("Object has been serialized");
-
 		}
-
 		catch (IOException ex) {
 			System.out.println("IOException caught");
 		}
 
-		Demo object1 = null;
+		// Create empty demo object to store deserialized object
+		Demo demoObject2 = null;
 
-		// Deserialization
+		/*********************
+		 * Deserialization *
+		 *********************/
 		try {
 			// Reading the object from a file
 			FileInputStream file = new FileInputStream(filename);
 			ObjectInputStream in = new ObjectInputStream(file);
 
 			// Method for deserialization of object
-			object1 = (Demo) in.readObject();
+			demoObject2 = (Demo) in.readObject();
 
 			in.close();
 			file.close();
 
-			System.out.println("Object has been deserialized\n");
-			
-			System.out.println("a = " + object1.a);
-			System.out.println("b = " + object1.b);
+			System.out.println("\nObject has been deserialized\n");
+
+			System.out.println("a = " + demoObject2.a);
+			System.out.println("b = " + demoObject2.b);
 		}
 
 		catch (IOException ex) {

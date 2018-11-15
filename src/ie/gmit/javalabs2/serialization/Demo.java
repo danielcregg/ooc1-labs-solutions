@@ -1,10 +1,9 @@
 package ie.gmit.javalabs2.serialization;
 
-//Java code for serialization and deserialization  
-//of a Java object 
+//Java code for serialization and deserialization of a Java objects state 
 import java.io.*;
 
-public class Demo implements java.io.Serializable {
+public class Demo implements Serializable {
 	public int a;
 	public String b;
 
