@@ -1,2 +1,2 @@
-# java1
-Intro to Java
+# Java Labs
+Java Labs
