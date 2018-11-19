@@ -35,10 +35,12 @@ public class SerializeDemo {
 			
 			System.out.println("Object has been serialized");
 		}
-		catch (IOException ex) {
+		catch (IOException ioex) {
 			System.out.println("IOException caught");
 		}
 
+		////////////////////////////////////////////////////////////////////////
+		
 		// Create empty demo object to store deserialized object
 		Demo demoObject2 = null;
 
@@ -61,14 +63,15 @@ public class SerializeDemo {
 			System.out.println("a = " + demoObject2.a);
 			System.out.println("b = " + demoObject2.b);
 		}
-
-		catch (IOException ex) {
+		catch (InvalidClassException icex) {
+			System.out.println("InvalidClassException caught");
+			icex.printStackTrace();
+		}
+		catch (IOException ioex) {
 			System.out.println("IOException caught");
 		}
-
-		catch (ClassNotFoundException ex) {
+		catch (ClassNotFoundException cnfex) {
 			System.out.println("ClassNotFoundException caught");
 		}
-
 	}
 }
