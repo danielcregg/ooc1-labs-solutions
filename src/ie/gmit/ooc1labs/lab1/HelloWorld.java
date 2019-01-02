@@ -1,10 +1,12 @@
-package ie.gmit.ooc1labs.lab1intro;
+package ie.gmit.ooc1labs.lab1;
 
 /* ***************************************************************************
  * The keyword public is know as a modifier. 
+ * 
  * public is a Java keyword which declares a member's access as public. 
  * public members are visible to all other classes. 
  * This means that any other class can access a public field or method. 
+ * 
  * The keyword class begins the class definition for a class named HelloWorld
  * ***************************************************************************/
 
@@ -19,6 +21,5 @@ public class HelloWorld {
 		System.out.println("Hello world");
 	
 	}
-
 	
 }

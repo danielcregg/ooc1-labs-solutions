@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab1intro;
+package ie.gmit.ooc1labs.lab1;
 
 /******************************************************************************
  *  Compilation:  javac Initials.java
