@@ -8,6 +8,9 @@ public class MyMainClass {
 		
 		// Create new object using MyClass type
 		MyClass myObject = new MyClass();
+		
+		// Access instance variable of myObject
+		System.out.println(myObject.x);
 
 	}
 
