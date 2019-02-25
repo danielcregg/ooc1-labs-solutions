@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class Months {
 
 	public static void main(String[] args) {
+		birthMonthFinder();
+		
+	} // Close Main
+	
+	static void birthMonthFinder(){
 
 		Scanner userInput = new Scanner(System.in);
 		
@@ -12,7 +17,10 @@ public class Months {
 
 		int monthNumber = userInput.nextInt();
 		
-		System.out.print("You were born in ");
+		if (monthNumber <= 12 && monthNumber >= 1) {
+			System.out.print("You were born in ");
+		}
+		
 
 		if (monthNumber == 1) {
 			System.out.println("January");
@@ -44,6 +52,6 @@ public class Months {
 		
 		// Close Scanner object
 		userInput.close();
-		
-	} // Close Main
+	}
+	
 } // Close Class
