@@ -10,7 +10,11 @@ public class MyMainClass {
 		MyClass myObject = new MyClass();
 		
 		// Access instance variable of myObject
-		System.out.println(myObject.x);
+		System.out.println(myObject.getX());
+		// Ser variable
+		myObject.setX(10);
+		// Access updated instance variable of myObject
+		System.out.println(myObject.getX());
 
 	}
 
