@@ -2,8 +2,29 @@ package ie.gmit.ooc1labs.lab8inheritance.human;
 
 public class Human {
 	
+	// Instance Variable
 	private double weight;
 	
+	// Default Constructor 
+	public Human() {
+		weight = 80.0;
+	}
+	
+	// Getter
+	public double getWeight() {
+		return weight;
+	}
+
+	//Setter
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+
+
+
+
+
 	public Human(double weight){
 		// this  is a keyword in Java. 
 		// It can be used inside a Method or constructor of  Class.

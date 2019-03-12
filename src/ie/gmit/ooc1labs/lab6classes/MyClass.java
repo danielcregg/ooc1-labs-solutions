@@ -4,7 +4,7 @@ public class MyClass {
 	private int x;
 	
 	// add getter
-	public int getX() {
+	int getX() {
 		return x;
 	}
 	

@@ -30,7 +30,11 @@ public class EncapTest {
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		if (name != null && name.trim().length() > 0) {
+			this.name = name;
+		} else {
+			System.out.println("ERROR: Invalid Input Argument");
+		}
 	}
 
 	public void setIdNum(String idNum) {

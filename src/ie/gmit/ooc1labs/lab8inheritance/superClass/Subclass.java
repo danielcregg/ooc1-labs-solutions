@@ -2,8 +2,18 @@ package ie.gmit.ooc1labs.lab8inheritance.superClass;
 
 public class Subclass extends Superclass {
 
-	public Subclass() {
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public Subclass() {
+//	}
 	
 //	Subclass(int age) {
 //	super(age);

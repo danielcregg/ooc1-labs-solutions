@@ -15,6 +15,10 @@ public class MyMainClass {
 		myObject.setX(10);
 		// Access updated instance variable of myObject
 		System.out.println(myObject.getX());
+		
+		//Access Modifiers
+		//this
+		//constructor
 
 	}
 

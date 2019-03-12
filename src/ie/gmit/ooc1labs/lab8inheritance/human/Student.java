@@ -12,23 +12,32 @@ package ie.gmit.ooc1labs.lab8inheritance.human;
  */
 public class Student extends Human {
 
+	// Instance Varibale
 	private int grade;
 
-	// Student(double weight) {
-	// super(weight);
-	// }
-
-	Student(double weight, int grade) {
-		super(weight);
-		this.setGrade(grade);
+	// Default Constructor
+	public Student() {
+		super();
+		int grade = 0;
 	}
 
+	// Getter
 	public int getGrade() {
 		return grade;
 	}
 
+	// Setter
 	public void setGrade(int grade) {
 		this.grade = grade;
 	}
 
 }
+
+// Student(double weight) {
+// super(weight);
+// }
+
+//Student(double weight, int grade) {
+//	super(weight);
+//	this.setGrade(grade);
+//}
