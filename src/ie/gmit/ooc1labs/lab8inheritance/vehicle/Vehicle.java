@@ -1,29 +1,31 @@
 package ie.gmit.ooc1labs.lab8inheritance.vehicle;
 
 public class Vehicle {
+	
+	// Instance variable
 	private String colour;
+	//private float price;
+	
+	// Default Constructor
+	public Vehicle() {
+		colour = null;
+	}
 	
 	// Constructor with parameters
 	public Vehicle(String colour) {
 		this.colour = colour;
 	}
 	
-	
-	// private float price;
-
-	// Getters
+	// Getter
 	public String getColour() {
 		return colour;
 	}
 
-	// public float getPrice(){
-	// return price;
-	// }
-
-	// Setters
+	// Setter
 	public void setColour(String colour) {
 		this.colour = colour;
 	}
+
 
 	// public void setPrice(float vehiclePrice){
 	// price = vehiclePrice;

@@ -1,8 +1,17 @@
 package ie.gmit.ooc1labs.lab8inheritance.vehicle;
 
+// Car class inherits from Vehicle class
 public class Car extends Vehicle {
 
+	// Instance Varibale
 	private String make;
+	
+	// Default Constructor
+	public Car() {
+		super();
+		make = null;
+	}
+	
 	/*
 	 * The super keyword refers to the objects of immediate super class.
 	 * 
@@ -12,15 +21,19 @@ public class Car extends Vehicle {
 	 * 2) To explicitly call the no-arg and parameterized constructor of parent class 
 	 * 3) To access the method of parent class when child class has overridden that method.
 	 */
+	
+	// Parameterised Constructor
 	public Car(String colour, String make) {
 		super(colour);
 		this.make = make;
 	}
 
+	// Getter
 	public String getMake() {
 		return make;
 	}
 
+	// Setter
 	public void setMake(String make) {
 		this.make = make;
 	}
