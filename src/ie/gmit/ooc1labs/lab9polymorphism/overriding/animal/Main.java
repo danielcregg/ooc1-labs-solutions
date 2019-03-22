@@ -1,6 +1,6 @@
 package ie.gmit.ooc1labs.lab9polymorphism.overriding.animal;
 
-public class AnimalSoundDriver {
+public class Main {
 
 	public static void main(String[] args) {
 
@@ -14,6 +14,11 @@ public class AnimalSoundDriver {
 		catObj1.speak();
 		dogObj1.speak();
 		duckObj1.speak();
+		
+		animalObj1.eating();
+		catObj1.eating();
+		dogObj1.eating();
+		duckObj1.eating();
 		
 		System.out.println(		animalObj1.getMoving()	);
 		System.out.println(		catObj1.getMoving()		);
