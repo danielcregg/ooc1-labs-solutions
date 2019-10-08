@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab10abstraction.account;
+package ie.gmit.ooc1labs.lab10abstraction;
 
 public abstract class Account {
 

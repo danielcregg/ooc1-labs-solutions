@@ -15,5 +15,5 @@ public class Main {
 		// If a class has at least one abstract method, then the class must be
 		// declared abstract.
 
-	}
-}
+	} // end Main method
+} // end Main class

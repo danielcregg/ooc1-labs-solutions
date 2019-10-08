@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab10abstraction.account.employee;
+package ie.gmit.ooc1labs.lab10abstraction.employee;
 
 public class EmployeeDriver {
 

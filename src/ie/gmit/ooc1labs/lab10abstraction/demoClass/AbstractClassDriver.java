@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab10abstraction.account.demoClass;
+package ie.gmit.ooc1labs.lab10abstraction.demoClass;
 
 public class AbstractClassDriver {
 

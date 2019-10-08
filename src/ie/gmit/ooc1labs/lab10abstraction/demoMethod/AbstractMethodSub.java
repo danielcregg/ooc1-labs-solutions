@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab10abstraction.account.demoMethod;
+package ie.gmit.ooc1labs.lab10abstraction.demoMethod;
 
 public class AbstractMethodSub extends AbstractClass{
 
