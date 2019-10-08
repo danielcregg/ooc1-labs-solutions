@@ -8,8 +8,8 @@ public class CopyFileUnicode {
       FileWriter out = null;
 
       try {
-         in = new FileReader("input.txt");
-         out = new FileWriter("output.txt");
+         in = new FileReader("resources/input.txt");
+         out = new FileWriter("resources/output.txt");
          
          int c;
          while ((c = in.read()) != -1) {
