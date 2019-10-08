@@ -7,8 +7,8 @@ import java.io.IOException;
    
 public class FileIOTest {  // saved as "FileIOTest.java"
    public static void main (String [] args) throws IOException {
-      Scanner in = new Scanner(new File("in.txt"));        // file input
-      Formatter out = new Formatter(new File("out.txt"));  // file output
+      Scanner in = new Scanner(new File(".\\resources\\in.txt"));        // file input
+      Formatter out = new Formatter(new File(".\\resources\\out.txt"));  // file output
    
       int a = in.nextInt();
       int b = in.nextInt();
