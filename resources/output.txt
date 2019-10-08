@@ -1,1 +1,1 @@
-This is some text which I will copy to a file called output.txt.
+€ This text will be copied to output.txt
