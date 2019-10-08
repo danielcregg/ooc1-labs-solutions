@@ -8,15 +8,18 @@ public class CopyFile {
 		FileOutputStream out = null;
 
 		try {
-			in = new FileInputStream("src/ie/gmit/ooc2labs/inputOutput/input.txt");
-			out = new FileOutputStream("src/ie/gmit/ooc2labs/inputOutput/output.txt");
+			in = new FileInputStream("resources/input.txt");
+			out = new FileOutputStream("resources/output.txt");
 			int c;
 
 			while ((c = in.read()) != -1) {
 				out.write(c);
 			}
+			System.out.println("Copy complete! See resources/output.txt");
 		} catch (FileNotFoundException exceptionObject) {
+			System.out.println("File NOT copied because file not found! See error below:");
 			exceptionObject.printStackTrace();
+			
 		} finally {
 			if (in != null) {
 				in.close();
