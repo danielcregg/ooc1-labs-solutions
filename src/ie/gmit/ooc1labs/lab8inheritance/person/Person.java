@@ -5,6 +5,10 @@ public class Person {
 	// Instance Variable
 	private int age;
 	
+	public Person(int age) {
+		this.age = age;
+	}
+
 	// Getter Method
 	public int getAge() {
 		return age;
