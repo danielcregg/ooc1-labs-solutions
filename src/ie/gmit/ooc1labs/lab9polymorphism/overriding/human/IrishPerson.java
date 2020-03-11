@@ -7,5 +7,9 @@ public class IrishPerson extends Human {
 		System.out.println("Dia Dhuit");
 	}
 	
+	public void irishPersonMethod() {
+		System.out.println("This is the Irish Person method!");
+	}
+	
 }
 
