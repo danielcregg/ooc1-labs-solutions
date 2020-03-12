@@ -29,7 +29,12 @@ public class Main {
 //				IrishPerson irishPersonObj1 =  (IrishPerson) human;
 //				irishPersonObj1.showIrishPassport();
 //			}
-//		}	
+//		}
+		
+		
+		// Super keyword in Method Overriding
+//		IrishPersonObj1.humanGreet();
+		
 
 	} // end main method
 } // end class
