@@ -1,6 +1,5 @@
 package ie.gmit.ooc1labs.lab9polymorphism.overriding.human;
 
-//import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
@@ -8,24 +7,20 @@ public class Main {
 		Human humanObj2 = new IrishPerson();
 		Human humanObj3 = new FrenchPerson();
 
-		humanObj1.speak();
-		humanObj2.speak();
-		humanObj3.speak();
-
-//		ArrayList<Human> HumansList = new ArrayList<>();
-//		
-//		HumansList.add(humanObj1);
-//		HumansList.add(humanObj2);
-//		HumansList.add(humanObj3);
+		humanObj1.greet();
+		humanObj2.greet();
+		humanObj3.greet();
+		
+//		Human HumansList[]= {humanObj1, humanObj2, humanObj2};
 
 //		for(Human human: HumansList) {
-//			human.speak();
+//			human.greet();
 //		}
 
 //		humanObj1.irishPersonMethod(); -- ERROR: Not reachable
 
 //		for(Human human: HumansList) {
-//			human.speak();
+//			human.greet();
 //			if (human instanceof IrishPerson) {
 //				IrishPerson irishPersonObj1 =  (IrishPerson) human;
 //				irishPersonObj1.irishPersonMethod();
