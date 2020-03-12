@@ -1,31 +1,35 @@
 package ie.gmit.ooc1labs.lab9polymorphism.overriding.human;
 
-
 public class Main {
 	public static void main(String[] args) {
+
 		Human humanObj1 = new Human();
-		Human humanObj2 = new IrishPerson();
-		Human humanObj3 = new FrenchPerson();
+		IrishPerson IrishPersonObj1 = new IrishPerson();
+		FrenchPerson FrenchPersonObj1 = new FrenchPerson();
+
+//		Human humanObj1 = new Human();
+//		Human IrishPersonObj1 = new IrishPerson();
+//		Human FrenchPersonObj1 = new FrenchPerson();
 
 		humanObj1.greet();
-		humanObj2.greet();
-		humanObj3.greet();
-		
-//		Human HumansList[]= {humanObj1, humanObj2, humanObj2};
+		IrishPersonObj1.greet();
+		FrenchPersonObj1.greet();
+
+//		Human HumansList[] = { humanObj1, IrishPersonObj1, FrenchPersonObj1 };
 
 //		for(Human human: HumansList) {
 //			human.greet();
 //		}
 
-//		humanObj1.irishPersonMethod(); -- ERROR: Not reachable
+//		humanObj1.showIrishPassport(); -- ERROR: Not reachable
 
 //		for(Human human: HumansList) {
 //			human.greet();
 //			if (human instanceof IrishPerson) {
 //				IrishPerson irishPersonObj1 =  (IrishPerson) human;
-//				irishPersonObj1.irishPersonMethod();
+//				irishPersonObj1.showIrishPassport();
 //			}
 //		}	
 
-	}
-}
+	} // end main method
+} // end class
