@@ -1,10 +1,10 @@
 package ie.gmit.ooc1labs.lab10abstraction.demoMethod;
 
-public class AbstractMethodDriver {
+public class Main {
 
 	public static void main(String[] args) {
 		AbstractMethodSub abm1 = new AbstractMethodSub();
-		System.out.println(abm1.abstractMethod("Daniel"));
+		System.out.println(    abm1.abstractMethod("Daniel")    );
 
 	}
 
