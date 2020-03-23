@@ -1,6 +1,6 @@
 package ie.gmit.ooc1labs.lab10abstraction.shoppingTrolley;
 
-public class LineItemDriver {
+public class Main {
 
 	public static void main(String[] args) {
 		
