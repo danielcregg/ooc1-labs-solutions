@@ -8,5 +8,5 @@ public class IfStatement {
 		if (tomsAge > jimsAge) {
 			System.out.println("2 + 2 is equal to 4");
 		}
-	}
-}
+	} // end main
+} // end class
