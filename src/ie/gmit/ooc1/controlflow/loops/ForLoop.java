@@ -1,4 +1,4 @@
-package ie.gmit.ooc1.flowcontrol.loops;
+package ie.gmit.ooc1.controlflow.loops;
 
 import java.util.Scanner;
 

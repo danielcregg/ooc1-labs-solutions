@@ -1,4 +1,4 @@
-package ie.gmit.ooc1.flowcontrol.decisionmaking;
+package ie.gmit.ooc1.controlflow.decisionmaking;
 
 public class IfStatement {
 	public static void main(String[] args) {
