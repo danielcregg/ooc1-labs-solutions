@@ -9,7 +9,7 @@ public class Methods {
 		printStuff();
 	}
 
-	static void printStuff() {
+	public static void printStuff() {
 		System.out.println("Hello");
 		System.out.println("fdsklfhdslk");
 	}

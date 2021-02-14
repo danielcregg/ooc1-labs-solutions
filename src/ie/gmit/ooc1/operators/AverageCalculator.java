@@ -16,7 +16,7 @@
   We must cast the result to a double to keep the decimal part.
   double averageAge = (double)(age1 + age2 + age3 + age4) / 4;
  */
-package ie.gmit.ooc1labs.lab2operators;
+package ie.gmit.ooc1.operators;
 
 public class AverageCalculator {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab5branching;
+package ie.gmit.ooc1.flowcontrol.decisionmaking;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class Months {
 		
 	} // Close Main
 	
-	static void birthMonthFinder(){
+	public static void birthMonthFinder(){
 
 		Scanner userInput = new Scanner(System.in);
 		
@@ -47,7 +47,7 @@ public class Months {
 		} else if (monthNumber == 12) {
 			System.out.println("December");
 		} else {
-			System.out.println("Invalid month number.");
+			System.out.println("Invalid month number. Please enter a number between 1 and 12 inclusive.");
 		} // Close if
 		
 		// Close Scanner object

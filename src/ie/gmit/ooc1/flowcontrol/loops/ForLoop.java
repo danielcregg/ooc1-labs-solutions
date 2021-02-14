@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab6iteration;
+package ie.gmit.ooc1.flowcontrol.loops;
 
 import java.util.Scanner;
 

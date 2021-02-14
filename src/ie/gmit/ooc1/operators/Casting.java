@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab2operators;
+package ie.gmit.ooc1.operators;
 
 public class Casting {
 	public static void main(String[] args) {
@@ -8,18 +8,18 @@ public class Casting {
 		float f = i;
 		long l = (long) f;
 		double d = l;
-		char  c = (char) d;
-		System.out.println("Result: " + c);
+		System.out.println("Result: " + d);
+		
 		
 		//Narrowing Casting(Explicitly done)
-		d = 65.0d;
+		d = 127.0d;
 		l = (long) d;
 		f = (float) l;
 		i = (int) f;
 		b = (byte) i;
-		c = (char) b;
-		System.out.println("Result: " + c);
-		
+		System.out.println("Result: " + b);
+	
+		// Pi is exactly 3
 		float danFloat = 3.14f;
 		int danInt = (int) danFloat;
 		System.out.println(danInt);

@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab2operators;
+package ie.gmit.ooc1.operators;
 
 import java.util.Scanner;
 

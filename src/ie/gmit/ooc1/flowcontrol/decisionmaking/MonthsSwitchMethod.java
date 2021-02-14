@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab5branching;
+package ie.gmit.ooc1.flowcontrol.decisionmaking;
 
 import java.util.Scanner;
 
