@@ -5,18 +5,23 @@ import java.util.Scanner;
 public class ForLoop {
 	
 	public static void main(String[] args) {
-		
+		int iterations = 0;
 		Scanner userInput = new Scanner(System.in);
 		
 		System.out.println("Please enter number of iterations you want: ");
 		
-		int N = userInput.nextInt();
+		iterations = userInput.nextInt();
 		
-		for (int i = 1; i <= N; i++) {
+		// for(initialization; condition ; increment/decrement){
+		//     statement(s);
+		// }
+		
+		for (int i = 1; i <= iterations; i++) {
 			System.out.println("This is iteration " + i);
 		}
 	
+		// Close scanner
 		userInput.close();
 	
-	}
-}
+	} // End main
+} // End class
