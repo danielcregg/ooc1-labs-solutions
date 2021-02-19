@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.lab7arrays;
+package ie.gmit.ooc1.arrays;
 
 public class SampleRunner {  
     public static void main(String[] args){
