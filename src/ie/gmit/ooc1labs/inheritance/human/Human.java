@@ -32,8 +32,8 @@ public class Human {
 	}
 
 	// Eat method for Human Class
-	public double eat(double weightGain){
-		weight = weight + weightGain;
+	public double eat(double weightOfFoodEaten){
+		weight = weight + weightOfFoodEaten;
 		System.out.println("You have eaten and you now weigh " + weight + " kilos.");
 		return weight;
 	}

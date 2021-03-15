@@ -1,6 +1,6 @@
 package ie.gmit.ooc1labs.inheritance.shapes;
 
-public class TestShape {
+public class Main {
 
 	public static void main(String[] args) {
 		// Create Triangle object
