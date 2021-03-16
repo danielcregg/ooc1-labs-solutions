@@ -1,6 +1,6 @@
 package ie.gmit.ooc1labs.inheritance.superClass;
 
-public class Driver {
+public class Main {
 
 	public static void main(String[] args) {
 				
