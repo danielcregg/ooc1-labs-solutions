@@ -2,19 +2,27 @@ package ie.gmit.ooc1labs.inheritance.animal;
 
 public class Animal {
 
+	// Fields or Instance Variables
 	private boolean vegetarian;
 	private String eats;
 	private int noOfLegs;
 
-	public Animal(){}
+	// Default Constructor
+	public Animal() {
+		//vegetarian = false;
+		//String eats = null;
+		//noOfLegs = 0;
+	}
 
+	// Paramiterised Constructor
 	public Animal(boolean veg, String food, int legs){
 		this.vegetarian = veg;
 		this.eats = food;
 		this.noOfLegs = legs;
 	}
 
-	public boolean isVegetarian() {
+	// Getters and Setters
+	public boolean getVegetarian() {
 		return vegetarian;
 	}
 

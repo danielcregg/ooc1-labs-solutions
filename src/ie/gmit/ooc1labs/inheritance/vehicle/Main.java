@@ -34,10 +34,6 @@ public class Main {
 		+  motorbikeObject0.getHandleBarID());
 		System.out.println("Motorbike 1 : " + motorbikeObject1.getColour() + " " 
 		+  motorbikeObject1.getHandleBarID());
-		
 
-		
-		
-		
 	}
 }
