@@ -7,9 +7,9 @@ public class Main {
 		// Creating new Subclass object
 		// new is keyword to create new object
 		// new needs constructor of object class
-		Subclass subclass1 = new Subclass();
-		subclass1.setVar(10);
-		System.out.println(subclass1.getVar());
+		Subclass subclassObject1 = new Subclass();
+		subclassObject1.setVar(10);
+		System.out.println(subclassObject1.getVar());
 
 	}
 
