@@ -7,7 +7,7 @@ public class Human {
 	
 	// Default Constructor 
 	public Human() {
-		weight = 80.0;
+		// weight = 0.0;
 	}
 
 	// Parameterised Constructor

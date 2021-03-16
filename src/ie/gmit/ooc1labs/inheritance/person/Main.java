@@ -4,17 +4,23 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Construct Employee object
-		Employee employeeObject1 = new Employee(48, "Elon");
-		Employee employeeObject2 = new Employee(64, "Bill");
+		// Construct Person objects
+		Person personObject1 = new Person();
+		//Person personObject2 = new Person(12);		
 		
-		// Print Employee object 1 age and first name
-		System.out.println(    employeeObject1.getAge()    );
-		System.out.println(    employeeObject1.getFirstName()    );
+		// Construct Employee objects
+		Employee employeeObject1 = new Employee();
+		//Employee employeeObject2 = new Employee(42, "Engineer");
+		//Employee employeeObject3 = new Employee(61, "Manager");
 		
-		// Print Employee object 2 age and first name
-		System.out.println(    employeeObject2.getAge()    );
-		System.out.println(    employeeObject2.getFirstName()    );
-	}
-	 
-}
+		// Print person objects
+		System.out.println("Person 1: " + personObject1.getAge());
+		//System.out.println("Person 2: " + personObject2.getAge());
+		
+		// Print Employee objects
+		System.out.println("Employee 1: " + employeeObject1.getAge() + ", " + employeeObject1.getRole());
+		//System.out.println("Employee 2: " + employeeObject2.getAge() + ", " + employeeObject2.getRole());
+		//System.out.println("Employee 3: " + employeeObject1.getAge() + ", " + employeeObject1.getRole());
+	
+	} // End main method 
+} // End Main class
