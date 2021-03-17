@@ -12,9 +12,9 @@ public class Person {
 	}
 	
 	// Constructor
-//	public Person(int age) {
-//		this.age = age;
-//	}
+	public Person(int age) {
+		this.age = age;
+	}
 
 	// Getter Method
 	public int getAge() {
