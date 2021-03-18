@@ -1,7 +1,7 @@
 package ie.gmit.ooc1labs.inheritance.shapes;
 
 public class TwoDShape {
-	
+
 	// Instance Variables
 	private double width;
 	private double height;
@@ -11,12 +11,12 @@ public class TwoDShape {
 //		this.width = 0.0;
 //		this.height = 0.0;
 	}
-	
+
 	// Constructor - Parameterised
 	public TwoDShape(double width, double height) {
 		this.width = width;
 		this.height = height;
-//		System.out.println("I am the TwoDShape Constructor");
+		System.out.println("I am the TwoDShape Constructor");
 	}
 
 	// Getters and Setters
@@ -38,6 +38,6 @@ public class TwoDShape {
 
 	// Print Method
 	public void print() {
-		System.out.println("Width is " + width + " and Height is " + height);
+		System.out.println("Width is " + this.width + " and Height is " + this.height);
 	}
 }

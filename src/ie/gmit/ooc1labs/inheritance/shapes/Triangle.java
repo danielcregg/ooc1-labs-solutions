@@ -5,14 +5,17 @@ public class Triangle extends TwoDShape {
 	// Instance Variable
 	private String style;
 	
+	// Default Constructor
 	public Triangle() {
+//		super();
+//		this.style = null;
 	}
 	
 	// Constructor
 	public Triangle(double width, double height, String style) {
 		super(width, height); // Call constructor of Super class
 		this.style = style;
-//		System.out.println("I am the Triangle Constructor");
+		System.out.println("I am the Triangle Constructor");
 	}
 	
 	// Getters and setters
@@ -31,7 +34,7 @@ public class Triangle extends TwoDShape {
 	}
 	
 	public void printStyle() {
-		System.out.println(style);
+		System.out.println(this.style);
 	}
 
 }
