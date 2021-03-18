@@ -8,12 +8,15 @@ public class TwoDShape {
 
 	// Default Constructor
 	public TwoDShape() {
-	};
+//		this.width = 0.0;
+//		this.height = 0.0;
+	}
 	
 	// Constructor - Parameterised
 	public TwoDShape(double width, double height) {
 		this.width = width;
 		this.height = height;
+//		System.out.println("I am the TwoDShape Constructor");
 	}
 
 	// Getters and Setters

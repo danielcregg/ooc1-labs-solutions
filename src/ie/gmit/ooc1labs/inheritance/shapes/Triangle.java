@@ -1,16 +1,18 @@
 package ie.gmit.ooc1labs.inheritance.shapes;
 
 public class Triangle extends TwoDShape {
+	
 	// Instance Variable
 	private String style;
 	
 	public Triangle() {
-	};
+	}
 	
 	// Constructor
-	public Triangle(String style, double width, double height) {
+	public Triangle(double width, double height, String style) {
 		super(width, height); // Call constructor of Super class
 		this.style = style;
+//		System.out.println("I am the Triangle Constructor");
 	}
 	
 	// Getters and setters
@@ -31,10 +33,5 @@ public class Triangle extends TwoDShape {
 	public void printStyle() {
 		System.out.println(style);
 	}
-	
-//	public void print() { 
-//		System.out.println("The triangle is " + style); 
-//		System.out.println("Width is " + getWidth() + " and Height is " + getHeight());
-//	} 
 
 }

@@ -1,6 +1,7 @@
 package ie.gmit.ooc1labs.inheritance.shapes;
 
 public class ColourTriangle extends Triangle {
+	
 	// Instance Variable
 	private String colour;
 	
@@ -9,11 +10,13 @@ public class ColourTriangle extends Triangle {
 	}
 	
 	// Constructor
-	public ColourTriangle(String colour, String style, double width, double height) {
-		super(style, width, height);
+	public ColourTriangle(double width, double height, String style, String colour) {
+		super(width, height, style);
 		this.colour = colour;
+//		System.out.println("I am the ColourTriangle Constructor");
 	}
 
+	// Getters and Setters
 	public String getColour() {
 		return colour;
 	}
