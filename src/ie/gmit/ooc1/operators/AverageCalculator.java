@@ -20,14 +20,13 @@ package ie.gmit.ooc1.operators;
 
 public class AverageCalculator {
 	public static void main(String[] args) {
-		int age1 = 18;
-	    int age2 = 35;
-	    int age3 = 50;
-	    int age4 = 44;
+		int age1 = 10;
+		int age2 = 9;
 
-	    double averageAge = (age1 + age2 + age3 + age4) / 4;
-	    //double averageAge = (age1 + age2 + age3 + age4) / 4.0;
-	    //double averageAge = (double)(age1 + age2 + age3 + age4) / 4;
+	    int averageAge = (age1 + age2) / 2;
+	    //double averageAge = (age1 + age2) / 2;
+	    //double averageAge = (double) (age1 + age2) / 2;
+	    
 	    System.out.println(averageAge);
 	}
 }
