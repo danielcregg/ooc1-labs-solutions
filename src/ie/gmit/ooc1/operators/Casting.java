@@ -2,20 +2,19 @@ package ie.gmit.ooc1.operators;
 
 public class Casting {
 	public static void main(String[] args) {
-		//Widening Casting(Implicit)
-		byte b = 65;
-		int i = b;
+		//Widening Casting (Implicit)
+		byte b = 127;
+		short s = b;
+		int i = s;
 		float f = i;
-		long l = (long) f;
-		double d = l;
+		double d = f;
 		System.out.println("Result: " + d);
 		
-		
-		//Narrowing Casting(Explicitly done)
+		//Narrowing Casting (Explicitly done)
 		d = 127.0d;
-		l = (long) d;
-		f = (float) l;
+		f = (float) d;
 		i = (int) f;
+		s = (short) i;
 		b = (byte) i;
 		System.out.println("Result: " + b);
 	
