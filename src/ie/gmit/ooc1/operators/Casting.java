@@ -3,7 +3,7 @@ package ie.gmit.ooc1.operators;
 public class Casting {
 	public static void main(String[] args) {
 		//Widening Casting (Implicit)
-		byte b = 127;
+		byte b = -128;
 		short s = b;
 		int i = s;
 		float f = i;
