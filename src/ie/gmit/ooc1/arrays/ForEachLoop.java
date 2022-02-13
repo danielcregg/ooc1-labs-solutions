@@ -4,7 +4,7 @@ public class ForEachLoop {
 
 	public static void main(String[] args) {
 
-		int[] numericals = { 100, 200, 300, 400, 500 };
+		int[] numericals = {100, 200, 300, 400, 500};
 
 		for (int i = 0; i < numericals.length; i++) {
 			System.out.print(numericals[i]);
