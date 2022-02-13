@@ -2,13 +2,27 @@ package ie.gmit.ooc1.controlflow.decisionmaking;
 
 public class IfStatement {
 	public static void main(String[] args) {
+
+		int jimsAge = 40;
+		int tomsAge = 30;
 		
-		int tomsAge = 40;
-		int jimsAge = 10;
+		int jimsHeightCm = 185;
+		int tomsHeightCm = 183;
 		
-		if (tomsAge > jimsAge) {
-			System.out.println("2 + 2 is equal to 4");
+		if (jimsAge < tomsAge) {
+			if (jimsHeightCm < tomsHeightCm) {
+				System.out.println("Jim is younger and smaller than Tom");
+			}
+		} else if(jimsAge == tomsAge) {
+			if (jimsHeightCm == tomsHeightCm) {
+				System.out.println("Jim is the same age and same height as Tom");
+			}
+		} else {
+			System.out.println("Jim is older and taller than Tom");
 		}
+		
+		
+
 		
 	} // End main
 } // End class
