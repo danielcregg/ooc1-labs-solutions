@@ -5,39 +5,46 @@ import java.util.Arrays;
 public class ArrayIntro {
 	public static void main(String[] args) {
 
-		// Declaring an Array and assigning values
+		// Declaring an Array and assigning memory
 		int[] ages = new int[3];
-
+				
+		// Populating array
 		ages[0] = 19;
 		ages[1] = 27;
 		ages[2] = 34;
-		// ages[3] = 51; // Array index out of bounds
+		//ages[3] = 51; // Array index out of bounds
 
 		// Example 2
-		String[] cars = { "Ford", "Nissan", "Toyota" };
+		String[] cars = {"Ford", "Nissan", "Toyota"};
 
 		// Inbuilt array methods - length
-		System.out.println(ages.length);
+		System.out.println(ages.length);   
 		System.out.println(cars.length);
 
 		// Access elements of array
 		System.out.println(ages[2]);
-		System.out.println(cars[1]);
+		// Print last element of the array
+ 		System.out.println(cars[cars.length - 1]);
 
 		// Access all elements of array
-		for (int i = 0; i < cars.length; i++) {
+		for (int i = 0; i < ages.length; i++) {
 			ages[i] = i;
 		}
 
 		// Print all elements of array
-		System.out.println(cars); // Prints the hashcode values of the objects but I want to print the values of
+		System.out.println(ages); // Prints the hashcode values of the objects but I want to print the values of
 									// these object
 
-		for (int i = 0; i < cars.length; i++) {
+		for (int i = 0; i < ages.length; i++) {
+			System.out.println(ages[i]);
+		}
+		
+		for (int i : ages) {
 			System.out.println(ages[i]);
 		}
 
-		System.out.println(Arrays.toString(cars)); // Need to import Arrays package
+		System.out.println(Arrays.toString(ages)); // Need to import Arrays package
+		System.out.println(Arrays.toString(cars));
 
 		// Create an array that holds all values form 1 to 100 and print it to the
 		// console
