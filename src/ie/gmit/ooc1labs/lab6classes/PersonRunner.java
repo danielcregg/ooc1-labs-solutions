@@ -1,6 +1,6 @@
-package ie.gmit.ooc1labs.classes;
+package ie.gmit.ooc1labs.lab6classes;
 
-public class Main {
+public class PersonRunner {
 
 	public static void main(String[] args) {
 				

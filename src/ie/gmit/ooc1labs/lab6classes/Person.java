@@ -1,4 +1,4 @@
-package ie.gmit.ooc1labs.classes;
+package ie.gmit.ooc1labs.lab6classes;
 
 public class Person {
 	
