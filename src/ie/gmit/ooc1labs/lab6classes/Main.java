@@ -6,7 +6,14 @@ public class Main {
 		// Create a new Car object
 		Car carObject1 = new Car();
 		
-		carObject1.getMake();
+		System.out.println(        carObject1.getMake()         );
+		
+		
+		carObject1.setMake("Ford");
+		
+		
+		System.out.println(        carObject1.getMake()         );
+		
 		
 	}
 }
