@@ -5,8 +5,8 @@ public class DogMain {
 	public static void main(String[] args) {
 		// Creating two new dog objects
 		Dog dog1 = new Dog();
-		Dog dog2 = new Dog("Timmy", 4);
-		Dog dog3 = new Dog("William", 5);
+		Dog dog2 = new Dog("Timmy", 4, "Pitbill");
+		Dog dog3 = new Dog("William", 5, "Pug");
 		
 		System.out.println(       dog1.getName()      );
 		System.out.println(       dog1.getAge()       );
