@@ -18,7 +18,7 @@ public class HelloWorld {
 	 * a single argument: an array of elements of type String
 	 */
 	public static void main(String[] args) {
-		System.out.println("Hello world");
+		System.out.println("Hello, World!");
 	
 	}
 	
