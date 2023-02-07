@@ -1,4 +1,4 @@
-package ie.atu.labs.lab1;
+package ie.atu.labs.intro;
 
 public class MyClass {
 

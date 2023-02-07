@@ -1,4 +1,4 @@
-package ie.atu.labs.lab1;
+package ie.atu.labs.intro;
 
 /* ***************************************************************************
  * The keyword public is know as a modifier. 
