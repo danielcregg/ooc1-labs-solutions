@@ -44,30 +44,30 @@ public class Variables {
 		System.out.println("Char Value: " + grade);
 
 		// Declare and initialize eight primitive constant values
-		final boolean godExisting = true;
-		final byte numOfMonthsInYear = 12;
-		final short covidDeathIreland2021 = 3452;
-		final int constantIntValue = 1;
-		final long constantLongValue = 10;
-		final float constantFloatValue = 1.11f;
-		final double pi = 3.14159265358979d;
-		final char bloodType = 'A';
+		final boolean GOD_EXISTS = true;
+		final byte NUM_MONTHS_IN_YEAR = 12;
+		final short COVID_DEATHS_IRELAND_2021 = 3452;
+		final int NUM_YEARS_IN_DECADE = 1;
+		final long NUM_YEARS_IN_MILLENIUM = 100000000l;
+		final float PLANKS_CONSTANT = 6.62607015f;
+		final double PI = 3.14159265358979d;
+		final char BLOOD_TYPE = 'A';
 
 		System.out.println("\n"); // Create a new line for easy reading
 
 		// Display the eight variables (Constants)
-		System.out.println("Constant Boolean Value: " + godExisting);
-		System.out.println("Constant Byte Value: " + numOfMonthsInYear);
-		System.out.println("Constant Short Value: " + covidDeathIreland2021);
-		System.out.println("Constant Int Value: " + constantIntValue);
-		System.out.println("Constant Long Value: " + constantLongValue);
-		System.out.println("Constant Float Value: " + constantFloatValue);
-		System.out.println("Constant Double Value: " + pi);
-		System.out.println("Constant Char Value: " + bloodType);
+		System.out.println("Constant Boolean Value: " + GOD_EXISTS);
+		System.out.println("Constant Byte Value: " + NUM_MONTHS_IN_YEAR);
+		System.out.println("Constant Short Value: " + COVID_DEATHS_IRELAND_2021);
+		System.out.println("Constant Int Value: " + NUM_YEARS_IN_DECADE);
+		System.out.println("Constant Long Value: " + NUM_YEARS_IN_MILLENIUM);
+		System.out.println("Constant Float Value: " + PLANKS_CONSTANT);
+		System.out.println("Constant Double Value: " + PI);
+		System.out.println("Constant Char Value: " + BLOOD_TYPE);
 
 		System.out.println("\n"); // Create a new line for easy reading
 
 		// The next line generates an error because an constant cannot be changed
-		// pi = 1.22222222;
+		// PI = 1.22222222;
 	} // End main
 } // End class
