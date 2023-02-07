@@ -16,7 +16,7 @@
   We must cast the result to a double to keep the decimal part.
   double averageAge = (double)(age1 + age2 + age3 + age4) / 4;
  */
-package ie.atu.labs.operators;
+package ie.atu.labs.datatypes;
 
 public class AverageCalculator {
 	public static void main(String[] args) {

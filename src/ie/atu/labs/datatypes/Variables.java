@@ -1,4 +1,4 @@
-package ie.atu.labs.operators;
+package ie.atu.labs.datatypes;
 
 public class Variables {
 
