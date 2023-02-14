@@ -15,7 +15,7 @@ public class Casting {
 		f = (float) d;
 		i = (int) f;
 		s = (short) i;
-		b = (byte) i;
+		b = (byte) s;
 		System.out.println("Result: " + b);
 	
 		// Pi is exactly 3
