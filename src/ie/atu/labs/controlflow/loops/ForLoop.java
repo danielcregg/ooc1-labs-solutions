@@ -23,5 +23,5 @@ public class ForLoop {
 		// Close scanner
 		userInput.close();
 	
-	} // End main
+	} // End main method
 } // End class
