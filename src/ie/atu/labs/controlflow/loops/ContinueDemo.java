@@ -11,5 +11,6 @@ public class ContinueDemo {
             }
             System.out.println("The value of i is " + i);
         } // End of for loop
+        System.out.println("End of method reached!"); 
     } // End of main method
 } // End of class ContinueDemo
