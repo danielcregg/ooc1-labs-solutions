@@ -8,7 +8,7 @@ public class SampleRunner {
         for (int i = args.length - 1; i >= 0; i-=2){    
             System.out.println(args[i]);
             
-            if (args[i].equals("GMIT")){
+            if (args[i].equals("ATU")){
                 System.out.println("\tWish you were here....");
             }
         }      
