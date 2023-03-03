@@ -1,4 +1,4 @@
-package ie.atu.labs.lab6classes;
+package ie.atu.labs.lab7classes;
 
 public class Person {
 
