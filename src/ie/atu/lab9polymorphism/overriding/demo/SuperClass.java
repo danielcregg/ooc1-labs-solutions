@@ -1,0 +1,9 @@
+package ie.atu.lab9polymorphism.overriding.demo;
+
+public class SuperClass {
+
+	public void greet() {
+		System.out.println("Hello");
+	}
+	
+}
