@@ -2,8 +2,8 @@ package ie.atu.labs.encapsulation;
 
 /* File name : EncapTest.java */
 public class EncapTest {
-	private String name;
 	private String idNum;
+	private String name;
 	private int age;
 	
 	public EncapTest() {
