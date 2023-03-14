@@ -3,30 +3,23 @@ package ie.atu.encapsulation;
 public class Dog {
 	
 	// Instance Variables
+	private long mui; // Microchip Unique Identifier - 15 digit number
 	private String name;
-	private int age;
-	private String breed;
+	private int ageYears;
 	
-	// Constructors
+	
+	// Default Constructor
 	public Dog() {
 	}
 	
-	public Dog(String name, int age, String breed) {
+	// Parameterised Constructor
+	public Dog(long MUI, String name, int ageYears) {
+		this.mui = mui;
 		this.name = name;
-		this.age = age;
-		this.breed = breed;
+		this.ageYears = ageYears;
 	}
 
-	// Getters
-	public String getName() {
-		return this.name;
-	}
-	
-	public int getAge() {
-		return this.age;
-	}
-	
-	// Setter
+	// Getters and Setter
 	public void setName(String name) {
 		if (name == "Bingo") {
 			System.out.println("Illegal dog name");
@@ -35,26 +28,34 @@ public class Dog {
 		}
 	}
 	
-	public void setAge(int age) {
-		if(age > 30 || age < 0 ) {
+	public long getMui() {
+		return mui;
+	}
+
+	public void setMui(long mui) {
+		this.mui = mui;
+	}
+
+	public int getAgeYears() {
+		return ageYears;
+	}
+
+	public void setAgeYears(int ageYears) {
+		this.ageYears = ageYears;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setAge(int ageYears) {
+		if(ageYears > 30 || ageYears < 0 ) {
 			System.out.println("This age is not possible");
 		} else {
-			this.age = age;
+			this.ageYears = ageYears;
 		}
 	}
 
-	public String getBreed() {
-		return breed;
-	}
-
-	public void setBreed(String breed) {
-		this.breed = breed;
-	}
-
-	
-	
-	
-	
 	
 	
 	
