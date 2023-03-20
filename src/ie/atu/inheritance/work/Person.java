@@ -1,4 +1,4 @@
-package ie.atu.inheritance.person;
+package ie.atu.inheritance.work;
 
 public class Person {
 	

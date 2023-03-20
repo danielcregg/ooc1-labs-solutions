@@ -1,4 +1,4 @@
-package ie.atu.inheritance.beverageSrc;
+package ie.atu.inheritance.beverage;
 
 public class Beverage {
 	

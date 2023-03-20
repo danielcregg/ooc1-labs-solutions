@@ -1,6 +1,6 @@
-package ie.atu.inheritance.beverageSrc;
+package ie.atu.inheritance.beverage;
 
-public class TestBeverage {
+public class Main {
 
 	public static void main(String[] args) {
 		Coffee java = new Coffee();
