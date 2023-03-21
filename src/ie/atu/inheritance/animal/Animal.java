@@ -2,48 +2,43 @@ package ie.atu.inheritance.animal;
 
 public class Animal {
 
-	// Fields or Instance Variables
-	private boolean vegetarian;
-	private String eats;
-	private int noOfLegs;
+	// Instance Variables
+	private double weightKg;
 
-	// Default Constructor
-	public Animal() {
-		//vegetarian = false;
-		//String eats = null;
-		//noOfLegs = 0;
-	}
-
-	// Paramiterised Constructor
-	public Animal(boolean veg, String food, int legs){
-		this.vegetarian = veg;
-		this.eats = food;
-		this.noOfLegs = legs;
+	// Constructor
+	public Animal(double weightKg) {
+		this.weightKg = weightKg;
 	}
 
 	// Getters and Setters
-	public boolean getVegetarian() {
-		return vegetarian;
+	public double getWeightKg() {
+		return weightKg;
 	}
 
-	public void setVegetarian(boolean vegetarian) {
-		this.vegetarian = vegetarian;
+	public void setWeightKg(double weightKg) {
+		this.weightKg = weightKg;
 	}
 
-	public String getEats() {
-		return eats;
+	// Methods
+	
+	// Overridden in subclasses
+	public void sleep() {
+		System.out.println("Animal is sleeping");
+	}
+	
+	public void eat(double foodWeightKg) {
+		System.out.println("Animal is eating " + foodWeightKg + "kg of food");
+		// Print the weight of the animal before eating
+		System.out.println("Animal weight before eating: " + this.weightKg + "kg");
+		// Increase the weight of the animal by the amount of food eaten
+		this.weightKg += foodWeightKg;
+		// Print the weight of the animal after eating
+		System.out.println("Animal weight after eating: " + this.weightKg + "kg");
 	}
 
-	public void setEats(String eats) {
-		this.eats = eats;
+	//toString
+	@Override
+	public String toString() {
+		return "Animal [weightKg=" + weightKg + "]";
 	}
-
-	public int getNoOfLegs() {
-		return noOfLegs;
-	}
-
-	public void setNoOfLegs(int noOfLegs) {
-		this.noOfLegs = noOfLegs;
-	}
-
 }
