@@ -20,8 +20,6 @@ public class Animal {
 	}
 
 	// Methods
-	
-	// Overridden in subclasses
 	public void sleep() {
 		System.out.println("Animal is sleeping");
 	}
