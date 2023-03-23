@@ -1,5 +1,5 @@
 // Encapsulation - Getters and Setters
-package ie.atu.lab4methods;
+package ie.atu.classesandobjects.dog;
 
 public class Dog {
 	//Instance variables

@@ -1,8 +1,8 @@
-package ie.atu.lab4methods;
+package ie.atu.classesandobjects.dog;
 
 import java.util.Scanner;
 
-public class DogDriver {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner( System.in );
         System.out.println("Enter age  dog");

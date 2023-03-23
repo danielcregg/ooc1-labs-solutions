@@ -1,4 +1,4 @@
-package ie.atu.lab7classes;
+package ie.atu.classesandobjects.car;
 
 class Car {
 

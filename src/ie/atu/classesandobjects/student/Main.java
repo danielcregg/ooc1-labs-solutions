@@ -1,8 +1,8 @@
-package ie.atu.classesandobjects;
+package ie.atu.classesandobjects.student;
 
 //import java.util.Scanner;
 
-public class StudentRunner {
+public class Main {
 
 	public static void main(String[] args) {
 

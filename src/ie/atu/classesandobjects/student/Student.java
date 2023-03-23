@@ -1,4 +1,4 @@
-package ie.atu.classesandobjects;
+package ie.atu.classesandobjects.student;
 
 /* Student class */
 public class Student {
