@@ -1,3 +1,7 @@
+// This class contains a demonstration of overloading in Java. 
+// Overloading is a feature that allows a class to have more than one method 
+// having the same name, if their argument lists are different.
+
 package ie.atu.polymorphism.overloading.demo;
 
 public class Overloading {

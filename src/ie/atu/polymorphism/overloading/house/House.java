@@ -3,27 +3,26 @@ package ie.atu.polymorphism.overloading.house;
 public class House {
 	
 	// Height of house
-	int height;
-	
-	// Default Constructor
-	House() {
-	      System.out.println("No input parameters. Constructing a default house.");
-	      height = 0;
-	}
-	
-	// Overloaded Constructor
-	House(int height) {
-	      System.out.println("Building new House that is " + height + " feet tall");
-	      this.height = height;
-	}
-	
-	
-	void info() {
-		System.out.println("House is " + this.height + " feet tall");
+	private int numberOfRooms;
+
+	// Default constructor
+	public House() {
+		numberOfRooms = 5; // Default value
 	}
 
-	// Overloaded Method
-	void info(String name) {
-		System.out.println("House Name: " + name + " - House is " + height + " feet tall");
+	// Overloaded constructor
+	public House(int numberOfRooms) {
+		this.numberOfRooms = numberOfRooms;
 	}
+
+	// Info method
+	public void info() {
+		System.out.println("The house has " + numberOfRooms + " rooms");
+	}
+
+	// Overloaded info method
+	public void info(String name) {
+		System.out.println("The house has " + numberOfRooms + " rooms and is called " + name);
+	}
+
 }

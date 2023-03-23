@@ -1,6 +1,6 @@
 package ie.atu.polymorphism.overriding.demo;
 
-public class OverrideDriver {
+public class Main {
 
 	public static void main(String[] args) {
 		SuperClass super1 = new SuperClass();
