@@ -2,9 +2,9 @@ package ie.atu.polymorphism.overriding.animal;
 
 public class Animal {
 	
-	// Fields
+	// Instance Variables
 	private boolean moving;
-	private float weight;
+	private float weightKg;
 	
 	// Getters and Setters
 	public void setMoving(boolean moving) {
@@ -15,12 +15,12 @@ public class Animal {
 		return moving;
 	}
 	
-	public float getWeight() {
-		return weight;
+	public float getWeightKg() {
+		return weightKg;
 	}
 
-	public void setWeight(float weight) {
-		this.weight = weight;
+	public void setWeightKg(float weightKg) {
+		this.weightKg = weightKg;
 	}
 
 	// Others Methods

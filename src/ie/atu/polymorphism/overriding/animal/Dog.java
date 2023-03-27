@@ -6,6 +6,11 @@ public class Dog extends Animal {
 	public void speak() {
 		System.out.println("Woof!");
 	}
-
+	
+	@Override
+	public void eating() {
+		System.out.println("The Dog is eating");
+		setWeightKg(getWeightKg() + 1);
+	}
 	
 }

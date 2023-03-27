@@ -3,7 +3,6 @@ package ie.atu.polymorphism.overloading.calculator;
 public class Main {
 
 	public static void main(String[] args) {
-		
 		// Creating Calculator Object
 		Calculator calcObj1 = new Calculator();
 		
@@ -13,5 +12,4 @@ public class Main {
 		System.out.println(		calcObj1.add(5.5, 4)		);
 		
 	} // End Main
-
 } // end Class

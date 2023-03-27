@@ -11,14 +11,16 @@ public class Main {
 		Duck duckObj1 = new Duck();
 
 		animalObj1.speak();
-		catObj1.speak();
 		dogObj1.speak();
+		catObj1.speak();
 		duckObj1.speak();
 		
 		animalObj1.eating();
-		catObj1.eating();
 		dogObj1.eating();
+		catObj1.eating();
 		duckObj1.eating();
+		
+		System.out.println(  dogObj1.getWeightKg() );
 		
 		System.out.println(		animalObj1.getMoving()	);
 		System.out.println(		catObj1.getMoving()		);
