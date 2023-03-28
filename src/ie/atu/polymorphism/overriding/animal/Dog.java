@@ -12,5 +12,9 @@ public class Dog extends Animal {
 		System.out.println("The Dog is eating");
 		setWeightKg(getWeightKg() + 1);
 	}
+
+	public void fetch() {
+		System.out.println("The Dog is fetching");
+	}
 	
 }
