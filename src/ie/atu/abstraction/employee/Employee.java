@@ -4,12 +4,11 @@ public abstract class Employee {
 
 	//Instance variables
 	private String name;
-	private int paymentPerHour;
+	
 
 	// Constructor
-	public Employee(String name, int paymentPerHour) {
+	public Employee(String name) {
 		this.name = name;
-		this.paymentPerHour = paymentPerHour;
 	}
 
 	// Getter and Setters
@@ -21,14 +20,6 @@ public abstract class Employee {
 		this.name = name;
 	}
 
-	public int getPaymentPerHour() {
-		return paymentPerHour;
-	}
-
-	public void setPaymentPerHour(int paymentPerHour) {
-		this.paymentPerHour = paymentPerHour;
-	}
-	
 	// Abstract Method
-	public abstract int calculateDailyPay();
+	public abstract int calculateMonthlyPay();
 }
