@@ -6,9 +6,9 @@ public class Contractor extends Employee {
 	private int costPerHourEuro;
 
 	// Constructor
-	public Contractor(String name, int costPerHour) {
+	public Contractor(String name, int costPerHourEuro) {
 		super(name);
-		this.costPerHourEuro = costPerHour;
+		this.costPerHourEuro = costPerHourEuro;
 	}
 
 	@Override

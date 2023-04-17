@@ -2,10 +2,9 @@ package ie.atu.abstraction.employee;
 
 public abstract class Employee {
 
-	//Instance variables
+	// Instance variables
 	private String name;
 	
-
 	// Constructor
 	public Employee(String name) {
 		this.name = name;

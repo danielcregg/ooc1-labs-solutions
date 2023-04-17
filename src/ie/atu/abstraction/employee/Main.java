@@ -9,7 +9,7 @@ public class Main {
 		FullTimeEmployee fteObj1 = new FullTimeEmployee("Tommy", 50000);
 		// Create an object of Contractor class and pass the name and euro
 		// rate per hour as parameters
-		Contractor contractorObj1 = new Contractor("John", 50);
+		Contractor contractorObj1 = new Contractor("John", 40);
 
 		// Print the monthly pay of both the employees
 		// using the calculateMonthlyPay() method
