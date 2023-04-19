@@ -14,6 +14,6 @@ public interface Animal {
 
 	// All interface methods are by default abstract and public
 	// Interface methods do not have a body - the body is provided by the "implement" class 
-	public void makeSound();
+	public abstract void makeSound();
 
 }
