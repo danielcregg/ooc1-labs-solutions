@@ -21,6 +21,8 @@
 				"GitHub.copilot"
 			],
 			"settings": {
+				// set default dark modern theme
+				"workbench.colorTheme": "Default Dark+",
 				"java.server.launchMode": "Standard",
 				"java.dependency.packagePresentation": "hierarchical",
 				"editor.minimap.enabled": false,
