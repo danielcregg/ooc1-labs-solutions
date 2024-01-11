@@ -22,12 +22,23 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"vscjava.vscode-java-pack"
+				"vscjava.vscode-java-pack",
+				"GitHub.copilot"
 			],
-			"settings": { 
-				// Set the Java server launch mode to Standard
+			"settings": {
 				"java.server.launchMode": "Standard",
-				"editor.inlayHints.enabled": "off"
+				"java.dependency.packagePresentation": "hierarchical",
+				"editor.minimap.enabled": false,
+				"editor.inlayHints.enabled": "off",
+				"workbench.tree.indent": 15,
+				"workbench.tree.renderIndentGuides": "always",
+				"workbench.colorCustomizations": {
+					"tree.indentGuidesStroke": "#05ef3c"
+				},
+				"files.exclude": {
+					"**/.devcontainer": true,
+					"**/.vscode": true
+				}
 			}
 		}
 	}
