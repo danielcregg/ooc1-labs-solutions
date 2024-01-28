@@ -10,6 +10,8 @@ package ie.atu.intro;
 
 public class Initials {
     public static void main(String[] args) {
+
+        // Print initials - D J C
         System.out.println("**********                 **       **********");
         System.out.println("**        **               **     **          ");
         System.out.println("**         **              **    **           ");
