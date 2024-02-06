@@ -21,8 +21,8 @@ public class CoinToss {
 
       if (headsCount == 3) {
         totalTossed += tossCount; // Accumulate tosses for successful attempts
-      }
-    }
+      } 
+   } // End of for loop
 
     // Calculate and display average tosses (outside the loop)
     if (totalTossed > 0) {
@@ -30,6 +30,8 @@ public class CoinToss {
       System.out.println("Average number of tosses to get 3 heads in a row: " + averageTossed);
     } else {
       System.out.println("No successful outcomes found in " + numAttempts + " attempts.");
-    }
-  }
-}
+    } // End of if-else
+
+  } // End of main
+} // End of class CoinToss
+```
