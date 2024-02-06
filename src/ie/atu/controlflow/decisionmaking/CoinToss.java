@@ -9,9 +9,10 @@ public class CoinToss {
     int numAttempts = 100000000; // Number of attempts to simulate
     int totalTossed = 0; // Total tosses across successful attempts
 
-    for (int i = 0; i < numAttempts; i++) {
+    // Simulate coin tosses for the specified number of attempts
+    for (int i = 0; i < numAttempts; i++) {  
       int tossCount = 0; // Reset toss count for each attempt
-      int headsCount = 0;
+      int headsCount = 0; // Reset heads count for each attempt
 
       while (headsCount < 3) { 
         boolean isHeads = random.nextBoolean();
