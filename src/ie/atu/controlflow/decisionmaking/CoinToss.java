@@ -6,8 +6,8 @@ public class CoinToss {
 
   public static void main(String[] args) {
     Random random = new Random(); // Create a random number generator
-    int numAttempts = 100000000; // Number of attempts to simulate
-    int totalTossed = 0; // Total tosses across successful attempts
+    int numAttempts = 10; // Number of attempts to simulate
+    int totalTossed = 0; // Total tosses across all attempts
 
     // Simulate coin tosses for the specified number of attempts
     for (int i = 0; i < numAttempts; i++) {  

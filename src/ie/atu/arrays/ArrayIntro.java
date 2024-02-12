@@ -25,7 +25,7 @@ public class ArrayIntro {
 		// Example 2
 		String[] cars = {"Ford", "Nissan", "Toyota", "Tesla"};
 		
-		// Print 1th element of array
+		// Print 1th element of array by calling the zeroth index
 		System.out.println(cars[0]);
 		
 		System.out.println(cars.length);
@@ -40,71 +40,76 @@ public class ArrayIntro {
 		
  		// Access and modify all elements of array
 		for (int i = 0; i < ages.length; i++) {
-			ages[i] = i;
+			ages[i] = 10;
 		}
 		
  		// Print all elements of array
  		for (int i = 0; i < ages.length; i++) {
-			System.out.println(ages[i]);
+			System.out.print(ages[i]);
+		
 		}
+	
  		
- 		// Prints the hashcode values of the objects but I want 
- 		// to print the values of these object
-		System.out.println(ages); 
+ 		// // Prints the hashcode values of the objects but I want 
+ 		// // to print the values of these object
+		// System.out.println(ages); 
 
-		// Enhanced For Loop or Java For-Each loop
-		for (int i : ages) {
-			System.out.println(ages[i]);
-		}
+		// // Enhanced For Loop or Java For-Each loop
+		// for (int age : ages) {
+		// 	System.out.println(age);
+		// 	System.out.println(ages[age]);
+		// }
 		
 		// Print Array using toString. Need to import Arrays package
 		System.out.println(Arrays.toString(ages)); 
 		System.out.println(Arrays.toString(cars));
 
-		// Create an array that holds all values form 1 to 10 and print it to the
-		// console
-		int[] myArr = new int[10];
-		for (int i = 0; i < myArr.length; i++) {
-			myArr[i] = i + 1;
-		}
-		System.out.println(Arrays.toString(myArr));
-		//System.out.println(Math.PI); // put into array
-		
-		// Array tests
-		int[] arr = {10, 15, 7, 20, 11, 2};
-		int i = 3;
-		int x = -1;
-		int y = 100;
+	 	// Create an array that holds all values form 1 to 10 and print it to the
+	 	// console
+	 	int[] myArr = new int[10];
+	 	for (int i = 0; i < myArr.length; i++) {
+	 		myArr[i] = i + 1;
+	 	}
 
-		// 1
-		arr[3] = x;
-		System.out.println(Arrays.toString(arr));
-		// 2
-		x = 2 * arr[0];
-		System.out.println(x);
-		// 3
-		x = arr[1] + arr[2];
-		System.out.println(x);		
-		// 4
-		x = arr[i] + i;
-		System.out.println(x);
-		// 5
-		y = x + arr[5];
-		System.out.println(y);
-		// 6
-		x = arr[i] + 1;		
-		System.out.println(x);
-		// 7
-		y = arr[i + 1];
-		System.out.println(y);
-
-		// Print every second element of the array
-		for (int j = 0; j < arr.length; j++) {
-			if (j%2 == 0) {
-				continue;
-			}
-			System.out.println(arr[j]);
-		}
+	 	System.out.println(Arrays.toString(myArr));
+	
+	 	//System.out.println(Math.PI); // put into array
 		
-	} // End main
+	 	// Array tests
+	 	int[] arr = {10, 15, 7, 20, 11, 2};
+	 	int i = 3;
+	 	int x = -1;
+	 	int y = 100;
+
+	 	// 1
+	 	arr[3] = x;
+	 	System.out.println(Arrays.toString(arr));
+	 	// 2
+	 	x = 2 * arr[0];
+	 	System.out.println(x);
+	 	// 3
+	 	x = arr[1] + arr[2];
+	 	System.out.println(x);		
+	 	// 4
+	 	x = arr[i] + i;
+	 	System.out.println(x);
+	 	// 5
+	 	y = x + arr[5];
+	 	System.out.println(y);
+	 	// 6
+	 	x = arr[i] + 1;		
+	 	System.out.println(x);
+	 	// 7
+	 	y = arr[i + 1];
+	 	System.out.println(y);
+
+	 	// Print every second element of the array
+	 	for (int j = 0; j < arr.length; j++) {
+	 		if (j % 2 == 0) {
+	 			continue; // Skip the rest of the code and go to the next iteration
+	 		}
+	 		System.out.println(arr[j]);
+	 	}
+		
+	 } // End main
 } // End class
