@@ -4,52 +4,96 @@ import java.util.Arrays;
 
 public class TwoDArray {
 	public static void main(String[] args) {
-		// 2D integer array with 4 rows and 2 columns
-		int[][] multiples = new int[4][2];
-		// 2D String array with 3 rows and 3 columns
-		String[][] cities = new String[3][3];
-		// 2D String array with 2 rows and 3 columns
-		String[][] names = {{ "Allen", "Alec", "Adam" }, { "Bill", "Bob", "Benny" }};
 
-		// You can also create a two-dimensional array where individual one-dimensional
-		// arrays have different lengths
-		String[][] myArray = new String[2][]; // OK
-		myArray[0] = new String[10];
-		myArray[1] = new String[5];
+		// Declare and initialize a 2D array
+		int[][] array2D = {
+			{1, 2, 3},
+			{4, 5, 6},
+			{7, 8, 9}
+		};
+
+		// // Print a two dimensional array in Java
+		// for (int[] j : array2D) {
+		// 	for (int i : j) {
+		// 		System.out.print(i + "\t");
+		// 	}
+		// 	System.out.println("\n");
+		// }
+
+		// // 2D integer array with 4 rows and 2 columns
+		// int[][] multiples = new int[4][2];
+
+		// // Print a two dimensional array in Java using inbuilt method
+		// System.out.println(Arrays.deepToString(multiples));
+
+		// // Update a two dimensional array in Java
+		// multiples[0][0] = 1;
 		
-		String[][] salutation = {{ "Mr. ", "Mrs. ", "Ms. " }, { "Brennan", "Jones" }};
+		// // Print a two dimensional array in Java using inbuilt method
+		// System.out.println(Arrays.deepToString(multiples));
 		
-		// int[][] wrong = new int[][]; // not OK, you must specify 1st dimension
+		// multiples[0][1] = 2;
+		// multiples[1][0] = 3;
+		// multiples[1][1] = 4;
+		// multiples[2][0] = 5;
+		// multiples[2][1] = 6;
+		// multiples[3][0] = 7;
+		// multiples[3][1] = 8;
 
-		// How to initialize two dimensional array in Java using a for loop
-		int[][] board = new int[3][3];
-		int counter = 1;
-		for (int i = 0; i < board.length; i++) {
-			for (int j = 0; j < board[i].length; j++) {
-				board[i][j] = counter;
-				counter++;
-			}
-		}
+		// // Print a two dimensional array in Java using inbuilt method
+		// System.out.println(Arrays.deepToString(multiples));
+
+		// // Update all elements of a two dimensional array in Java
+		// for (int i = 0; i < multiples.length; i++) {
+		// 	for (int j = 0; j < multiples[i].length; j++) {
+		// 		multiples[i][j] = i + j;
+		// 	}
+		// }
+
+		// // // 2D String array with 3 rows and 3 columns
+		// String[][] cities = new String[3][3];
+		// // 2D String array with 2 rows and 3 columns
+		// String[][] names = {{ "Allen", "Alec", "Adam" }, { "Bill", "Bob", "Benny" }};
+
+		// // You can also create a two-dimensional array where individual one-dimensional
+		// // arrays have different lengths
+		// String[][] myArray = new String[2][]; // OK
+		// myArray[0] = new String[10];
+		// myArray[1] = new String[5];
 		
-		System.out.println(board[1][1]);
+		// String[][] salutation = {{ "Mr. ", "Mrs. ", "Ms. " }, { "Brennan", "Jones" }};
+		
+		// // int[][] wrong = new int[][]; // not OK, you must specify 1st dimension
 
-		for (int i = 0; i < board.length; i++) {
-			for (int j = 0; j < board[i].length; j++) {
-				System.out.print(board[i][j]);
-			}
-			System.out.println();
-		}
+		// // How to initialize two dimensional array in Java using a for loop
+		// int[][] board = new int[3][3];
+		// int counter = 1;
+		// for (int i = 0; i < board.length; i++) {
+		// 	for (int j = 0; j < board[i].length; j++) {
+		// 		board[i][j] = counter;
+		// 		counter++;
+		// 	}
+		// }
+		
+		// System.out.println(board[1][1]);
 
-//		// Print a two dimensional array in Java
-//		for (int[] j : board) {
-//			for (int i : j) {
-//				System.out.print(i + "\t");
-//			}
-//			System.out.println("\n");
-//		}
+		// for (int i = 0; i < board.length; i++) {
+		// 	for (int j = 0; j < board[i].length; j++) {
+		// 		System.out.print(board[i][j]);
+		// 	}
+		// 	System.out.println();
+		// }
 
-		// Print a two dimensional array in Java using inbuilt method
-		//System.out.println(Arrays.deepToString(board));
+		// // Print a two dimensional array in Java
+		// for (int[] j : board) {
+		// 	for (int i : j) {
+		// 		System.out.print(i + "\t");
+		// 	}
+		// 	System.out.println("\n");
+		// }
+
+		// // Print a two dimensional array in Java using inbuilt method
+		// System.out.println(Arrays.deepToString(board));
 //
 //		// 2D array length
 //		int[][] primes = new int[3][];
