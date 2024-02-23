@@ -5,14 +5,27 @@ import java.util.Arrays;
 public class TwoDArray {
 	public static void main(String[] args) {
 
-		// Declare and initialize a 2D array
+		// Declare and initialize a 2D array. 
+		// Here we have declared and initialized a 2D array with 3 rows (Nested Arrays) and 3 columns (with 3 elements each).
+		// The first nested array has 3 elements, the second nested array has 3 elements, and the third nested array has 3 elements.
+		// The first nested array is the first row, the second nested array is the second row, and the third nested array is the third row.
+		// Columns are the elements in each nested array. The first column contains 1, 4, and 7. The second column contains 2, 5, and 8. The third column contains 3, 6, and 9.
+		// Row and column terminology is used to describe the elements in a 2D array because it is similar to a table.
 		int[][] array2D = {
-			{1, 2, 3},
-			{4, 5, 6},
-			{7, 8, 9}
+			{1, 2, 3}, // 1st row (First nested array with 3 elements)
+			{4, 5, 6}, // 2nd row (Second nested array with 3 elements)
+			{7, 8, 9}  // 3rd row (Third nested array with 3 elements)
 		};
 
-		// Print a two dimensional array in Java
+		// Print a two dimensional array using for loops
+		for (int i = 0; i < array2D.length; i++) {
+			for (int j = 0; j < array2D[i].length; j++) {
+				System.out.print(array2D[i][j] + "\t");
+			}
+			System.out.println("\n");
+		}
+		
+		// Print a two dimensional using nested for each loops
 		for (int[] innerArray : array2D) {
 			for (int element : innerArray) {
 				System.out.print(element + "\t");
@@ -20,13 +33,15 @@ public class TwoDArray {
 			System.out.println("\n");
 		}
 
-		// 2D integer array with 4 rows and 2 columns
+		// Printing a two dimensional using for each loops can be easier to read but it is not as flexible as using for loops.
+
+		// Create a 2D integer array with 4 rows (nested arrays) and 2 columns (2 elements in each nested array)
 		int[][] multiples = new int[4][2];
 
-		// Print a two dimensional array in Java using inbuilt method
+		// Print a 2 dimensional array using inbuilt Arrays.deepToString() method
 		System.out.println(Arrays.deepToString(multiples));
 
-		// Update a two dimensional array in Java
+		// Update an element in a 2 dimensional array
 		multiples[0][0] = 1;
 		
 		// Print a two dimensional array in Java using inbuilt method

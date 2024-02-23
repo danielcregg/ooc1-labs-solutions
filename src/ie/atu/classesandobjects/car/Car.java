@@ -2,21 +2,21 @@ package ie.atu.classesandobjects.car;
 
 class Car {
 
-	// Instance Variables
-	String make; // e.g. "Ford"
-	float priceEur; // e.g. 20000.00
-	int speedKph; // e.g. 120
+	// Instance Variables AKA Fields AKA Properties AKA Attributes AKA State
+	private String make; // e.g. "Ford"
+	private float priceEur; // e.g. 20000.00
+	private int speedKph; // e.g. 120
 	
-	// Default Constructor
+	// Default Constructor - No parameters
 	public Car() {
-		// System.out.println("I am the Default Constructor");
+		System.out.println("I am the Default Constructor");
 		// All instance variables are set to their default values
-		//make = null;
-		//priceEur = 0.0f;
-		//speedKph = 0;
+		make = null;
+		priceEur = 0.0f;
+		speedKph = 0;
 	}
 
-	// Parameterized Constructor
+	// Parameterized Constructor - 3 parameters
 	public Car(String make, float priceEur, int speedKph) {
 		System.out.println("I am the Parameterized Constructor");
 		this.make = make;
@@ -55,29 +55,29 @@ class Car {
 		this.speedKph = speedKph;
 	}
 
-	// Accelerate method // New speed = Old speed + accelerationInMetersPerSecondPerSecond * timeInSeconds
-	public void accelerate(int accelerationInMetersPerSecondPerSecond, int timeInSeconds) {
-		System.out.println("This car is accelerating!");
-		// New speed = Old speed + accelerationInMetersPerSecondPerSecond * time
-		this.speedKph = this.speedKph + accelerationInMetersPerSecondPerSecond * timeInSeconds;
-	}
+	// // Accelerate method // New speed = Old speed + accelerationInMetersPerSecondPerSecond * timeInSeconds
+	// public void accelerate(int accelerationKph, int timeInSeconds) {
+	// 	System.out.println("This car is accelerating!");
+	// 	// New speed = Old speed + accelerationKph * time
+	// 	this.speedKph = this.speedKph + accelerationKph * timeInSeconds;
+	// }
 	
-	// Brake method
-	public void brake(int decelerationInMetersPerSecondPerSecond, int timeInSeconds) {
-		System.out.println("This car is braking!");
-		// New speed = Old speed + accelerationInMetersPerSecondPerSecond * time
-		// Car speed cannot be negative
-		if (this.speedKph - decelerationInMetersPerSecondPerSecond * timeInSeconds < 0) {
-			this.speedKph = 0;
-		} else {
-			this.speedKph = this.speedKph - decelerationInMetersPerSecondPerSecond * timeInSeconds;
-		}
-	}
+	// // Brake method
+	// public void brake(int decelerationKph, int timeInSeconds) {
+	// 	System.out.println("This car is braking!");
+	// 	// New speed = Old speed + accelerationKph * time
+	// 	// Car speed cannot be negative
+	// 	if (this.speedKph - decelerationKph * timeInSeconds < 0) {
+	// 		this.speedKph = 0;
+	// 	} else {
+	// 		this.speedKph = this.speedKph - decelerationKph * timeInSeconds;
+	// 	}
+	// }
 
-	// The toString method by default prints the hashcode of the object. It is common practice 
-	// to override this method to print the instance variables of the object.
-	public String toString() {
-		return "Make: " + make + ", Price: €" + priceEur + ", Speed: " + speedKph + "kph";
-	}
+	// // The toString method by default prints the hashcode of the object. It is common practice 
+	// // to override this method to print the instance variables of the object.
+	// public String toString() {
+	// 	return "Make: " + make + ", Price: €" + priceEur + ", Speed: " + speedKph + "kph";
+	// }
 
 } // End class
