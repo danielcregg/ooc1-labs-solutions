@@ -12,5 +12,20 @@ public class Main {
         ColourTriangle colourTriangle = new ColourTriangle(10, 20, "Equilateral", "Red");
         colourTriangle.showDimensions();
         System.out.println(colourTriangle);
+
+        // Create a Rectangle object
+        Rectangle rectangle = new Rectangle(10, 20);
+        rectangle.showDimensions();
+        System.out.println(rectangle);
+
+        // Create a Fighter objects
+        Fighter fighter = new Fighter();
+        Fighter chunLi = new ChunLi();
+        Fighter ryu = new Ryu();
+        
+        ryu.specialMove();
+        chunLi.specialMove();
+        fighter.specialMove();
+
     }
 }
