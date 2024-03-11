@@ -1,5 +1,6 @@
 package ie.atu.inheritance;
 
+// Triangle class extends TwoDShape class. Triangle is a subclass of TwoDShape class.
 public class Triangle extends TwoDShape {
 
     // Instance variable
@@ -11,7 +12,7 @@ public class Triangle extends TwoDShape {
         this.triangleType = triangleType;
     }
 
-    // Getters and Setters
+    // Getter and Setter
     public String getTriangleType() {
         return triangleType;
     }
@@ -20,16 +21,18 @@ public class Triangle extends TwoDShape {
         this.triangleType = triangleType;
     }
 
-    // Method to calculate the area of the triangle
+    // Method to calculate the area of the triangle. Overriding the area method in
+    // the superclass. // Area of a triangle is 1/2 * base * height
     @Override
     public double area() {
-        return super.getWidth() * super.getHeight() / 2;
+        return 0.5 * super.getWidth() * super.getHeight();
     }
 
     // toString method
     @Override
     public String toString() {
-        return "Triangle is " + triangleType + " and has a height of " + getHeight() + " and a width of " + getWidth();
+        return "This Triangle is " + triangleType + " and has a height of " + getHeight() + " and a width of "
+                + getWidth();
     }
 
 }
