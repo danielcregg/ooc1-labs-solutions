@@ -37,6 +37,6 @@ public class TwoDShape {
     // toString method - returns a string representation of the object
     @Override
     public String toString() {
-        return "Width of 2D shape: " + width + " Height od 2D shape: " + height;
+        return "The Width of 2D shape is : " + width + " and the Height of 2D shape: " + height;
     }
 }
