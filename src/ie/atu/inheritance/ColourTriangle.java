@@ -24,7 +24,7 @@ public class ColourTriangle extends Triangle {
     // toString method
     @Override
     public String toString() {
-        return "The ColourTriangle is a " + getTriangleType() + " triangle with a width of " + getWidth() + " and a height of " + getHeight() + " and the colour is " + colour;
+        return "The ColourTriangle is a " + super.getTriangleType() + " triangle with a width of " + super.getWidth() + " and a height of " + super.getHeight() + " and the colour is " + colour;
     }
 
 }
