@@ -1,12 +1,14 @@
 package ie.atu.inheritance;
 
-import ie.atu.polymorphism.overriding.streetfighter.ChunLi;
-import ie.atu.polymorphism.overriding.streetfighter.Fighter;
-import ie.atu.polymorphism.overriding.streetfighter.Ryu;
-
 public class Main {
 
     public static void main(String[] args) {
+
+        // Create a TwoDShape object
+        TwoDShape twoDShape = new TwoDShape(10, 20);
+        System.out.println(twoDShape.area());
+        twoDShape.toString();
+
         // Create a Triangle object
         Triangle triangle = new Triangle(10, 20, "Equilateral");
         System.out.println(triangle.area());
@@ -14,8 +16,8 @@ public class Main {
         System.out.println(triangle);
 
         // Create a ColourTriangle object
-        ColourTriangle colourTriangle = new ColourTriangle(10, 20, "Equilateral", "Red");
-        System.out.println(colourTriangle.area());
+        ColourTriangle colourTriangle = new ColourTriangle(10, 30, "Equilateral", "Red");
+        System.out.println(colourTriangle.area()); // This calls the area method from the Triangle class
         colourTriangle.toString();
         System.out.println(colourTriangle);
 
