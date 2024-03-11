@@ -20,8 +20,10 @@ public class Triangle extends TwoDShape {
         this.triangleType = triangleType;
     }
 
+    // Method to calculate the area of the triangle
+    @Override
     public double area() {
-        return getWidth() * getHeight() / 2;
+        return super.getWidth() * super.getHeight() / 2;
     }
 
     // toString method

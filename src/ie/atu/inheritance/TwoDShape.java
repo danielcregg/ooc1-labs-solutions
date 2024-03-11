@@ -29,6 +29,10 @@ public class TwoDShape {
         this.height = height;
     }
 
+    public double area() {
+        return width * height;
+    }
+
     // Method to display the dimensions of the shape
     public void showDimensions() {
         System.out.println("Width and height are of this 2D Shape are " + width + " and " + height);
