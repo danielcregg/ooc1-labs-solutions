@@ -6,9 +6,9 @@ public class Triangle extends TwoDShape {
     private String triangleType;
 
     // Constructor
-    public Triangle(double width, double height, String style) {
-        super(width, height);
-        this.style = style;
+    public Triangle(double width, double height, String triangleType) {
+        super(width, height); // Call the constructor of the superclass
+        this.triangleType = triangleType;
     }
 
     // Getters and Setters
