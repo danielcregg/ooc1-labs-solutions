@@ -7,6 +7,8 @@ public class Rectangle extends TwoDShape {
         super(width, height); // Call the constructor of the superclass
     }
 
+    // Method to calculate the area of the rectangle
+    @Override
     public double area() {
         return getWidth() * getHeight();
     }

@@ -9,35 +9,19 @@ public class Main {
         triangle.showDimensions();
         System.out.println(triangle);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // Create a ColourTriangle object
         ColourTriangle colourTriangle = new ColourTriangle(10, 20, "Equilateral", "Red");
+        System.out.println(colourTriangle.area());
         colourTriangle.showDimensions();
         System.out.println(colourTriangle);
 
         // Create a Rectangle object
         Rectangle rectangle = new Rectangle(10, 20);
+        System.out.println(rectangle.area());
         rectangle.showDimensions();
         System.out.println(rectangle);
+
+
 
         // Create a Fighter objects
         Fighter fighter = new Fighter();
