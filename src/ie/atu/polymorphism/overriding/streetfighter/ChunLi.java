@@ -1,4 +1,4 @@
-package ie.atu.inheritance;
+package ie.atu.polymorphism.overriding.streetfighter;
 
 public class ChunLi extends Fighter {
 

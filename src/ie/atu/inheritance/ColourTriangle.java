@@ -1,5 +1,6 @@
 package ie.atu.inheritance;
 
+// ColourTriangle class extends Triangle class. ColourTriangle is a subclass of Triangle.
 public class ColourTriangle extends Triangle {
 
     // Instance variable
