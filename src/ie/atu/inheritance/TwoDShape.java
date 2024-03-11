@@ -29,13 +29,14 @@ public class TwoDShape {
         this.height = height;
     }
 
+    // Method to calculate the area of the shape
     public double area() {
         return width * height;
     }
 
-    // Method to display the dimensions of the shape
-    public void showDimensions() {
-        System.out.println("Width and height are of this 2D Shape are " + width + " and " + height);
+    // toString method - returns a string representation of the object
+    @Override
+    public String toString() {
+        return "Width of 2D shape: " + width + " Height od 2D shape: " + height;
     }
 }
-
