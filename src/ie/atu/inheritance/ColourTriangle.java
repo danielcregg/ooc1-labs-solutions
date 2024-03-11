@@ -10,6 +10,7 @@ public class ColourTriangle extends Triangle {
     public ColourTriangle(double width, double height, String triangleType, String colour) {
         super(width, height, triangleType); // Call the constructor of the superclass
         this.colour = colour;
+        System.out.println("Inside the Colour Triangle constructor");
     }
 
     // Getters and Setters

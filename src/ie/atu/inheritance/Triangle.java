@@ -10,6 +10,7 @@ public class Triangle extends TwoDShape {
     public Triangle(double width, double height, String triangleType) {
         super(width, height); // Call the constructor of the superclass
         this.triangleType = triangleType;
+        System.out.println("Inside the Triangle constructor");
     }
 
     // Getter and Setter

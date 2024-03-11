@@ -8,6 +8,7 @@ public class TwoDShape {
 
     // Constructor
     public TwoDShape(double width, double height) {
+        System.out.println("Inside the TwoDShape constructor");
         this.width = width;
         this.height = height;
     }
