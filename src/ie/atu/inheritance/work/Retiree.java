@@ -1,6 +1,6 @@
 package ie.atu.inheritance.work;
 
-public class Retiree extends Person{
+public class Retiree extends Person {
 
 	// Instance Variable
 	private float statePension;

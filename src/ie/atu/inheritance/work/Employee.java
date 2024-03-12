@@ -7,13 +7,13 @@ public class Employee extends Person {
 	
 	// Default Constructor
 	public Employee() {
-		super();
+		super();  // Need to use super to call default constructor of super class. If not called, it will be called automatically. It must be the first line in the constructor
 		this.role = null;
 	}
 	
 	// Constructor
 	public Employee(int age, String role) {
-		super(age);  // Need to use super to call parameterised constructor of super class
+		super(age);  // Need to use super to call parameterized constructor of super class. If not called, it will be called automatically and it will call the default constructor. It must be the first line in the constructor
 		this.role = role;
 	}
 	

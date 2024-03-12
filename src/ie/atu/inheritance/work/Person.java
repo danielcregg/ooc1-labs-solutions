@@ -7,7 +7,6 @@ public class Person {
 	
 	// Default Constructor
 	public Person() {
-		// Set all instance variables to their default values.
 		this.age = 0;
 	}
 	
