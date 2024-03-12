@@ -6,18 +6,18 @@ public class Retiree extends Person {
 	private float statePension;
 	
 	// Constructor
-	public Retiree(int age, float lumpSum) {
+	public Retiree(int age, float statePension) {
 		super(age);
-		this.statePension = lumpSum;
+		this.statePension = statePension;
 	}
 	
 	// Getter
-	public float getLumpSum() {
+	public float getStatePension() {
 		return statePension;
 	}
 	
 	// Setter
-	public void setLumpSum(float statePension) {
+	public void setStatePension(float statePension) {
 		this.statePension = statePension;
 	}
 	
