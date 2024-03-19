@@ -15,20 +15,6 @@ public class Main {
 		catObj1.speak();
 		duckObj1.speak();
 		
-		/* Downcasting
-		 * If we want to call the fetch method, which is only defined 
-		 * in the Dog class, we need to downcast the animal reference
-		 * to a Dog reference using the (Dog) cast operator. This 
-		 * tells the compiler that we know that the animal reference 
-		 * is actually referring to an instance of Dog, and allows us
-		 * to call the fetch method.
-		 */
-		
-		Animal animalObj2 = new Dog();
-		animalObj2.speak();
-		// animalObj2.fetch(); - ERROR
-		((Dog) animalObj2).fetch(); // prints "Fetch"
-        
 		/* We create an array of Animal references and populate it 
 		 * with instances of Dog, Cat, and Animal. 
 		 */
@@ -56,11 +42,26 @@ public class Main {
 		doSomething(new Cat());  // Calls Cat's speak method
 		doSomething(new Duck());  // Calls Duck's speak method
 
-	} // End Main
+		// UPCASTING and DOWNCASTING examples
+		// A dog object is created and assigned to an Animal reference. This is known as UPCASTING.
+		Animal animalObj2 = new Dog();
+		// The speak method is called on the Animal reference. Because of polymorphism, the speak method of the Dog class is called.
+		animalObj2.speak();
+		// The fetch method is called on the Animal reference. This results in a compiler error, because the Animal class does not have a fetch method.
+		// animalObj2.fetch(); - ERROR
+		// We can fix this by DOWNCASTING the Animal reference to a Dog reference using the (Dog) cast operator.
+		((Dog) animalObj2).fetch(); // prints "Fetch"
+
+		/*
+		 * This code illustrates the flexibility of polymorphism, but also its limitations - while a subclass can be treated as its superclass,
+		 * it can only access methods that the superclass knows about. To access subclass-specific methods, a downcast is necessary.
+		 */
+
+	} // End of Main method.
 
 	// Method that takes an Animal reference as a parameter
 	public static void doSomething(Animal animal) {
 		animal.speak();
 	}
 
-} // End Class
+} // End of Class.
