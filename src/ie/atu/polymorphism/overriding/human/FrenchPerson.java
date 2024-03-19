@@ -6,5 +6,10 @@ public class FrenchPerson extends Human {
 	public void greet() {
 		System.out.println("Bonjour");
 	}
+
+	@Override
+	public void showPassport() {
+		System.out.println("Je suis français. Voici mon passeport français!");
+	}
 	
 }

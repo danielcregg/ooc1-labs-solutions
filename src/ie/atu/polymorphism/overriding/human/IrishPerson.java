@@ -7,13 +7,9 @@ public class IrishPerson extends Human {
 		System.out.println("Dia Dhuit");
 	}
 
-//	public void showIrishPassport() {
-//		System.out.println("Showing my Irish Passport!");
-//	}
-
-//	public void humanGreet() {
-//		// This will call the overridden greet() method of super class Human
-//		super.greet();
-//	}
+	@Override
+	public void showPassport() {
+		System.out.println("I am Irish. Here is my Irish passport!");
+	}
 
 }
