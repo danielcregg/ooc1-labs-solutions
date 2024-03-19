@@ -30,11 +30,7 @@ public class Main {
 		((Dog) animalObj2).fetch(); // prints "Fetch"
         
 		/* We create an array of Animal references and populate it 
-		 * with instances of Dog, Cat, and Animal. We then loop over 
-		 * the array and call the makeSound method on each Animal 
-		 * reference. Because of polymorphism, the appropriate makeSound
-		 * method is called for each object, even though we are calling
-		 * the method on a reference of type Animal.
+		 * with instances of Dog, Cat, and Animal. 
 		 */
 		Animal[] animals = new Animal[4];
         animals[0] = new Animal();
@@ -42,9 +38,29 @@ public class Main {
         animals[2] = new Cat();
 		animals[3] = new Duck();
 
+		/* We then loop over the array and call the makeSound method on each Animal 
+		 * reference. Because of polymorphism, the appropriate makeSound
+		 * method is called for each object, even though we are calling
+		 * the method on a reference of type Animal.
+		 */
 		for (Animal animal : animals) {
             animal.speak();
         }
-		
+
+		/* We can also pass instances of Dog, Cat and Duck to a method that takes an Animal
+		 * reference as a parameter. The appropriate makeSound method is called for 
+		 * each object, even though we are passing the method an instance of Dog or Cat.
+		 */
+		doSomething(new Animal());  // Calls Animal's speak method
+		doSomething(new Dog());  // Calls Dog's speak method
+		doSomething(new Cat());  // Calls Cat's speak method
+		doSomething(new Duck());  // Calls Duck's speak method
+
 	} // End Main
+
+	// Method that takes an Animal reference as a parameter
+	public static void doSomething(Animal animal) {
+		animal.speak();
+	}
+
 } // End Class
