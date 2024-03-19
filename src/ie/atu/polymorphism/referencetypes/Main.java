@@ -1,10 +1,5 @@
 /* 
  * Example of reference types
- * 
- * The variable original is a reference to a String object.
- * The variable copy is a reference to the same String object.
- * The variable modified is a reference to a new String object.
- * The variable input is a reference to the same String object.
  */
 package ie.atu.polymorphism.referencetypes;
 
@@ -15,18 +10,17 @@ public class Main {
          * of studentObject1, so both references now point to the same Student object. 
          */
         Student studentObject1 = new Student(123456);
+        // System.identityHashCode is implemented by converting the internal address of the object into an integer
+        System.out.println("studentObject1 memory address = :\t" + System.identityHashCode(studentObject1));
+        // Create a Student reference studentObjectCopy and assign it the value of studentObject1. 
         Student studentObjectCopy = studentObject1;
-        // Print the reference value of both objects
-        System.out.println("studentObject1 memory address = :\t" + System.identityHashCode(studentObject1)); 
         System.out.println("studentObjectCopy memory address = :\t" + System.identityHashCode(studentObjectCopy));
+        
         // Print the student ID of both objects
         System.out.println("studentObject1 Student ID = :\t\t" + studentObject1.getStudentID());
         System.out.println("studentObjectCopy Student ID = :\t" + studentObjectCopy.getStudentID());
 
         studentObjectCopy.setStudentID(999999);
-        // Print the reference value of both objects
-        System.out.println("studentObject1 memory address = :\t" + System.identityHashCode(studentObject1)); 
-        System.out.println("studentObjectCopy memory address = :\t" + System.identityHashCode(studentObjectCopy));
         // Print the student ID of both objects
         System.out.println("studentObject1 Student ID = :\t\t" + studentObject1.getStudentID());
         System.out.println("studentObjectCopy Student ID = :\t" + studentObjectCopy.getStudentID());
@@ -36,12 +30,12 @@ public class Main {
         // other reference. In Java, you cannot change the value of a reference without
         //  using the = operator. 
         studentObjectCopy = new Student(888888);
-        /// Print the reference value of both objects
+        // Print the reference value of both objects
         System.out.println("studentObject1 memory address = :\t" + System.identityHashCode(studentObject1)); 
         System.out.println("studentObjectCopy memory address = :\t" + System.identityHashCode(studentObjectCopy));
+        
         // Print the student ID of both objects
         System.out.println("studentObject1 Student ID = :\t\t" + studentObject1.getStudentID());
         System.out.println("studentObjectCopy Student ID = :\t" + studentObjectCopy.getStudentID());
-
     }
 }
