@@ -6,6 +6,7 @@ public class Main {
 		// Creating Calculator Object
 		Calculator calcObj1 = new Calculator();
 		
+		// Calling each add method with their different parameters
 		System.out.println(		calcObj1.add(10, 20.1)		);
 		System.out.println(		calcObj1.add(10, 20.5, 30)	);
 		System.out.println(		calcObj1.add(1.1, 1.2)		);

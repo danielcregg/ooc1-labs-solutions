@@ -15,18 +15,6 @@ public class Main {
 		catObj1.speak();
 		duckObj1.speak();
 		
-		animalObj1.eating();
-		dogObj1.eating();
-		catObj1.eating();
-		duckObj1.eating();
-		
-		System.out.println(  dogObj1.getWeightKg()  );
-		System.out.println(	 animalObj1.getMoving()	);
-		System.out.println(	 catObj1.getMoving()	);
-		System.out.println(	 dogObj1.getMoving()	);
-		duckObj1.setMoving(true);
-		System.out.println(		duckObj1.getMoving()	);
-		
 		/* Downcasting
 		 * If we want to call the fetch method, which is only defined 
 		 * in the Dog class, we need to downcast the animal reference
@@ -36,27 +24,27 @@ public class Main {
 		 * to call the fetch method.
 		 */
 		
-		 Animal animalObj2 = new Dog();
+		Animal animalObj2 = new Dog();
 		animalObj2.speak();
-		animalObj2.eating();
 		// animalObj2.fetch(); - ERROR
 		((Dog) animalObj2).fetch(); // prints "Fetch"
         
-		/* we create an array of Animal references and populate it 
+		/* We create an array of Animal references and populate it 
 		 * with instances of Dog, Cat, and Animal. We then loop over 
 		 * the array and call the makeSound method on each Animal 
 		 * reference. Because of polymorphism, the appropriate makeSound
 		 * method is called for each object, even though we are calling
 		 * the method on a reference of type Animal.
 		 */
-		// Animal[] animals = new Animal[4];
-        // animals[0] = new Animal();
-		// animals[1] = new Dog();
-        // animals[2] = new Cat();
-		// animals[3] = new Duck();
+		Animal[] animals = new Animal[4];
+        animals[0] = new Animal();
+		animals[1] = new Dog();
+        animals[2] = new Cat();
+		animals[3] = new Duck();
 
-		// for (Animal animal : animals) {
-        //     animal.speak();
-        // }
+		for (Animal animal : animals) {
+            animal.speak();
+        }
+		
 	} // End Main
 } // End Class
