@@ -4,6 +4,6 @@ public class Ryu extends Fighter {
 
     @Override
     public void specialMove() {
-        System.out.println("Hadouken");
+        System.out.println("Hadouken!");
     }
 }
