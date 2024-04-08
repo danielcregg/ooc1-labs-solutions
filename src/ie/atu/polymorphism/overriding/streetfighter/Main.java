@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Create a Fighter objects
+        // Create Fighter objects
         Fighter ryu = new Ryu();
         Fighter chunLi = new ChunLi();
-        Fighter blanka = new Blanka();
+        Fighter blanka = new Blanka(); 
 
         // Show all fighters special moves
         Fighter fighters[] = { ryu, chunLi, blanka };
