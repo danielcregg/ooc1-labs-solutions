@@ -1,4 +1,4 @@
-package ie.atu.abstraction.monstersgame;
+package ie.atu.abstraction.multipleinheritancedemo;
 
 class FlyingMonster extends Monster implements Flyable {
     public void fly() {

@@ -1,4 +1,4 @@
-package ie.atu.abstraction.monstersgame;
+package ie.atu.abstraction.multipleinheritancedemo;
 
 class SpeedyMonster extends Monster implements SuperSpeed {
     public void runFast() {

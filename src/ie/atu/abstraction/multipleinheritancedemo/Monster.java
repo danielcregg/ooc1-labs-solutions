@@ -1,4 +1,4 @@
-package ie.atu.abstraction.monstersgame;
+package ie.atu.abstraction.multipleinheritancedemo;
 
 public class Monster {
     void roar() {

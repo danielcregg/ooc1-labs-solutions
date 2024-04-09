@@ -1,4 +1,4 @@
-package ie.atu.abstraction.monstersgame;
+package ie.atu.abstraction.multipleinheritancedemo;
 
 class SuperMonster extends Monster implements Flyable, SuperSpeed {
     public void fly() {
