@@ -12,7 +12,7 @@ public interface Animal {
 	 * initialized, and it is shared among all instances of classes that implement
 	 * the interface.
 	 */
-	public static final boolean canMove = true;
+	public static final boolean CAN_MOVE = true;
 
 	/**
 	 * All interface methods are by default abstract and public
@@ -21,4 +21,4 @@ public interface Animal {
 	 */
 	public abstract void makeSound();
 
-}
+} //End of the Animal interface
