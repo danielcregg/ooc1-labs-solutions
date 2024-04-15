@@ -1,7 +1,7 @@
 package ie.atu.apie;
 
 // Encapsulation
-class Circle implements TwoDShape {
+class Circle implements Shape {
     
     // Instance variable
     private double radius;
@@ -27,8 +27,8 @@ class Circle implements TwoDShape {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    @Override
     public double perimeter() {
         return 2 * Math.PI * radius;
     }
+
 }

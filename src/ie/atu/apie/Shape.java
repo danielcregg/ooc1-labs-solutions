@@ -1,10 +1,8 @@
 package ie.atu.apie;
 
 // Abstraction
-interface TwoDShape {
+interface Shape {
 
     // Abstract methods
     double area();
-
-    double perimeter();
 }
