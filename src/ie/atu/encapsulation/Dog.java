@@ -45,7 +45,7 @@ public class Dog {
 
 	public void setName(String name) {
 		// Name Validation - Name cannot be null, empty, more than 25 characters, or contain numbers
-		if (name == null || name == "" || name.length() > 25 || name.matches(".*\\d+.*")) {
+		if (name == null || name.isEmpty() || name.length() > 25 || name.matches(".*\\d+.*")) {
 			System.out.println("ERROR: Name incorrect.");
 		} else {
 			this.name = name;

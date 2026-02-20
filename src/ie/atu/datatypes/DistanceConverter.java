@@ -29,8 +29,8 @@ public class DistanceConverter
 		double feet = yards * YARDS_TO_FEET;
 		double inches = feet * FEET_TO_INCHES;
 
-		System.out.println(yards + " yards are: " + feet + "feet");
-		System.out.println(yards + " yards are: " + inches + "inches");
+		System.out.println(yards + " yards are: " + feet + " feet");
+		System.out.println(yards + " yards are: " + inches + " inches");
 	   
 		// Close the input stream
 		input.close();

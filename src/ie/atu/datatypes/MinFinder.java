@@ -2,9 +2,9 @@ package ie.atu.datatypes;
 
 import java.util.Scanner;
 
-/*Write a program that prompts the user to enter two integers. 
-Print the smaller of the two numbers entered. 
-You�ll need to use a Scanner and a Math method.*/
+/*Write a program that prompts the user to enter two integers.
+Print the smaller of the two numbers entered.
+You'll need to use a Scanner and a Math method.*/
 
 public class MinFinder {
 
